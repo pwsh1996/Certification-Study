@@ -11,115 +11,115 @@
 
 *Resources:* 
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal
 ### 🔳 deploy and manage domain controllers in Azure
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adds-extend-domain?
+https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adds-extend-domain
 ### 🔳 deploy Read-Only Domain Controllers (RODCs)
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/rodc/install-a-windows-server-2012-active-directory-read-only-domain-controller--rodc---level-200-?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/rodc/install-a-windows-server-2012-active-directory-read-only-domain-controller--rodc---level-200-
 ### 🔳 troubleshoot flexible single master operations (FSMO) roles
 *Resources:*
 
-https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles?
+https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles
 ## Configure and manage multi-site, multi-domain, and multi-forest environments
 ### 🔳 configure and manage forest and domain trusts
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-forest-trust?
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-forest-trust
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771568(v=ws.10)?
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771568(v=ws.10)
 ### 🔳 configure and manage AD DS sites
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology
 ### 🔳 configure and manage AD DS replication
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts
 ## Create and manage AD DS security principals
 ### 🔳 create and manage AD DS users and groups
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754661(v=ws.10)?
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754661(v=ws.10)
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771069(v=ws.10)?
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771069(v=ws.10)
 ### 🔳 manage users and groups in multi-domain and multi-forest scenarios
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733001(v=ws.10)?
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733001(v=ws.10)
 ### 🔳 implement group managed service accounts (gMSAs)
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview?
+https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview
 ### 🔳 join Windows Server to AD DS, Azure AD DS, and Azure AD
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain?
+https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain
 
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/join-windows-vm?
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/join-windows-vm
 ## Impliment and manage hybrid identities
 ### 🔳 implement Azure AD Connect
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect-v2?
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect-v2
 ### 🔳 manage Azure AD Connect Synchrinization
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/concept-azure-ad-connect-sync-architecture?
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/concept-azure-ad-connect-sync-architecture
 ### 🔳 implement Azure AD Connect cloud sync
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud-sync?
+https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud-sync
 ### 🔳 integrate Azure AD, AD DS, and Azure AD DS
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad?
+https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad
 ### 🔳 manage Azure AD DS
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance?
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance
 ### 🔳 manage Azure AD Connect Health
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect?
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect
 ### 🔳 manage authentication in on-premises and hybrid enviroments
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn?
+https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn
 ### 🔳 configure and manage AD DS passwords
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy?
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy
 ## Manage Windows Server by using  domain-based Group Policies
 ### 🔳 implement Group Policy in AD DS
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)?
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)
 ### 🔳 implement Group Policy Preferences in AD DS
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-preferences?
+https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-preferences
 ### 🔳 implement Group Policy in Azure AD DS
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy?
+https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy
 # Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
 ## Manage Windows Servers in a hybrid environment
 ### 🔳 deploy a Windows Admin Center gateway server
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/deploy-wac-in-azure?
+https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/deploy-wac-in-azure
 ### 🔳 configure a target machine for Windows Admin Center
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-vm?
+https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-vm
 ### 🔳 configure PowerShell Remoting
 *Resources:*
 
@@ -138,7 +138,7 @@ https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overvie
 ### 🔳 manage Windows Servers by using Azure Arc
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-admin-center?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-admin-center
 ### 🔳 assign Azure Policy Guest Configure
 *Resources:*
 
