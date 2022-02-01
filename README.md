@@ -45,9 +45,57 @@
 ### create runbooks to automate tasks on target VMs
 ### implement DSC to prevent configuration drift in IaaS machines
 # Manage virtual machines and containers *(15-20%)*
-
+## Manage Hyper-V and guest virtual machines
+### enable VM enhanced session mode
+### manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
+### configure nested virtualization
+### configure VM memory
+### configure Integrated Services
+### configure Discrete Device Assignment
+### configure VM Resource Groups
+### configure VM CPU Groups
+### configure hypervisor scheduling types
+### manage VM Checkpoints
+### implement high availability for virtual machines
+### manage VHD and VHDX files
+### configure Hyper-V network adapter
+### configure NIC teaming
+### configure Hyper-V switch
+## Create and manage containers
+### create Windows Server container images
+### manage Windows Server container images
+### configure Container networking
+### manage container instances
+## Manage Azure Virtual Machines that run Windows Server
+### manage data disks
+### resize Azure Virtual Machines
+### configure continuous delivery for Azure Virtual Machines
+### configure connections to VMs
+### manage Azure Virtual Machines network configuration
 # Implement and manage an on-premises and hybrid networking infrastructure *(15-20%)*
-
+## Implement on-premises and hybrid name resolution
+### integrate DNS with AD DS
+### create and manage zones and records
+### configure DNS forwarding/conditional forwarding
+### integrate Windows Server DNS with Azure DNS private zones
+### implement DNSSEC
+## Manage IP addressing in on-premises and hybrid scenarios
+### implement and manage IPAM
+### implement and configure DHCP server role (on-premises only)
+### resolve IP address issues in hybrid enviroments
+### create and manage scopes
+### create and manage IP reservations
+### implement DHCP high avalability
+## Implement on-premises and hybrid network connectivity
+### implement and manage Remote Access role
+### implement and manage Azure Network Adapter
+### implement and manage Azure Extended Network
+### implement and manage Network Policy Server role
+### implement Web Application Proxy
+### implement Azure Relay
+### implement site-to-site virtual private network (VPN)
+### implement Azure Virtual WAN
+### implement Azure AD Application Proxy
 # Manage storage and file services *(15-20%)*
 ## Configure and manage Azure File Sync
 ### create Azure File Sync service
