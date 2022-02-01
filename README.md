@@ -12,6 +12,21 @@
 | NT LAN Manager (NTLM) | TCP 139/UDP 138,139 |
 | Kerberos | TCP/UDP 88 |
 
+**Deploy**
+
+**Server Manager**
+
+Manage > Add Roles and Features > Role-based or feature-based installation > Active Directory Domain Services
+
+Promote this Server to be a domain controller
+- Add a domain controller to an existing domain
+- Add a new domainto an existing forest 
+- Add a new forest
+
+Functional level
+
+Set the DNS to itself
+
 *Resources:* 
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-
