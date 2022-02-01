@@ -204,7 +204,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-wind
 
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect
 ### 🔳 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
 *Resources:*
 
@@ -214,7 +214,7 @@ https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-
 ### 🔳 configure nested virtualization
 *Resources:*
 
-https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization
 ### ✅ configure VM memory
 
 ![image](https://user-images.githubusercontent.com/51274282/151913437-dfee810b-7999-416a-9d5c-c2e9e412ce3b.png)
@@ -273,11 +273,11 @@ https://docs.microsoft.com/en-us/powershell/module/hyper-v/get-vmmemory
 ### 🔳 configure Integrated Services
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services
 ### 🔳 configure Discrete Device Assignment
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/deploying-graphics-devices-using-dda?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/deploying-graphics-devices-using-dda
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment?WT.mc_id=modinfra-39512-orthomas
 
@@ -285,11 +285,11 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/de
 ### 🔳 configure VM Resource Groups
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-minroot-2016?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-minroot-2016
 ### 🔳 configure VM CPU Groups
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups
 ### 🔳 configure hypervisor scheduling types
 *Resources:*
 
@@ -305,9 +305,9 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/en
 ### 🔳 implement high availability for virtual machines
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743844(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743844(v=ws.11)
 ### 🔳 manage VHD and VHDX files
 *Resources:*
 
@@ -334,7 +334,7 @@ https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-contain
 ### 🔳 manage Windows Server container images
 *Resources:*
 
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images
 ### 🔳 configure Container networking
 *Resources:*
 
@@ -492,11 +492,11 @@ https://docs.microsoft.com/en-us/azure/storage/files/files-manage-namespaces?WT.
 ### 🔳 configure Windows Server file share access
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10)
 ### 🔳 configure file screens
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management
 ### 🔳 configure File Server Resource Manger (FSRM) quotas
 *Resources:*
 
