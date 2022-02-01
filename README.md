@@ -7,7 +7,10 @@
 
 | Protocol | Port |
 | --- | --- |
-| Lightweight Directory Access Protocol (LDAP) | TCP 389 |
+| Lightweight Directory Access Protocol (LDAPv3) | TCP/UDP 389 |
+| Domain Name Service (DNS) | TCP/UDP 53 |
+| NTLM |  |
+| Kerberos |  |
 
 *Resources:* 
 
