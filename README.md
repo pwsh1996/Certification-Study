@@ -192,7 +192,51 @@ https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-
 *Resources:*
 
 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization?WT.mc_id=modinfra-39512-orthomas
-### 🔳 configure VM memory
+### ✅ configure VM memory
+
+![image](https://user-images.githubusercontent.com/51274282/151913437-dfee810b-7999-416a-9d5c-c2e9e412ce3b.png)
+
+Powershell:
+```powershell
+Get-VM | fl Name, DynamicMemoryEnabled MemoryMaximum, MemoryMinimum, MemoryStartup
+```
+```powershell
+Set-VM -name <client01> -MemoryMinimumBytes 3GB -MemoryMaximum 5GB -MemoryStartupBytes 4GB
+```
+
+> **Dynamic Memory** - If you have idle or low-load virtual machines, as in pooled Virtual Desktop Infrastructure (VDI) environments, Dynamic Memory enables you to increase consolidation and improve reliability for restart operations. You also gain agility in responding to requirement changes with these new capabilities.
+
+Hyper-V enables users to make the following configuration changes to Dynamic Memory when the virtual machine is running:
+- Increase the maximum memory.
+- Decrease the minimum memory.
+
+> **Smart Paging** - Although minimum memory increases virtual machine consolidation numbers, it also brings a challenge. If a virtual machine has a smaller amount of memory than its startup memory and if it is restarted, Hyper-V needs additional memory to restart the virtual machine. Due to host memory pressure or virtual machine states, Hyper-V may not always have additional memory available. This can cause sporadic virtual machine restart failures. Smart Paging is used to bridge the memory gap between minimum memory and startup memory, and allow virtual machines to restart reliably.
+
+To minimize the performance impact of Smart Paging, Hyper-V uses it only when all of the following occurs:
+- The virtual machine is being restarted.
+- There is no available physical memory.
+- No memory can be reclaimed from other virtual machines running on the host.
+
+Smart Paging is not used when:
+- A virtual machine is being started from an “off state” (instead of a restart).
+- Oversubscribing memory for a running virtual machine is required.
+- A virtual machine is failing over in Hyper-V clusters.
+
+Also note the following about how Smart Paging is used:
+- Smart Paging files are created only when needed for a virtual machine.
+- After the additional amount of memory is removed, Smart Paging files are deleted.
+- Smart Paging is not used for this virtual machine again until another restart occurs and there is not enough physical memory.
+
+| Setting | Description |
+| --- | --- |
+| Startup RAM	| Specifies the amount of memory required to start the virtual machine. The value needs to be high enough to allow the guest operating system to start, but should be as low as possible to allow for optimal memory utilization and potentially higher consolidation ratios. |
+| Minimum RAM	| Specifies the minimum amount of memory that should be allocated to the virtual machine after the virtual machine has started. The value can be set as low as 32 MB to a maximum value equal tothe Startup RAM Value | 
+| Maximum RAM |	Specifies the maximum amount of memory that this virtual machine is allowed to use. The value can be set from as low as the value for Startup RAM to as high as 1 TB. However, a virtual machine can use only as much memory as the maximum amount supported by the guest operating system. For example, if you specify 64 GB for a virtual machine running a guest operating system that supports a maximum of 32 GB, the virtual machine cannot use more than 32 GB. |
+| Memory buffer |	Specifies how much memory Hyper-V will attempt to assign to the virtual machine compared to the amount of memory actually needed by the applications and services running inside the virtual machine. Memory buffer is specified as a percentage because the actual amount of memory that represents the buffer changes in response to changes in memory usage while the virtual machine is running. Hyper-V uses performance counters in the virtual machine that identify committed memory to determine the current memory requirements of the virtual machine and then calculates the amount of memory to add as a buffer. The buffer is determined using the following formula: <br /> <br /> Amount of memory buffer = how much memory the virtual machine actually needs / (memory buffer value / 100). <br /> <br /> For example, if the memory committed to the guest operating system is 1000 MB and the memory buffer is 20%, Hyper-V will attempt to allocate an additional 20% (200 MB) for a total of 1200 MB of physical memory allocated to the virtual machine. Note: The buffer is not maintained when there is not enough physical memory available in the computer to give every virtual machine its requested memory buffer. |
+| Memory weight |	Provides Hyper-V with a way to determine how to distribute memory among virtual machines if there is not enough physical memory available in the computer to give every virtual machine its requested amount of memory. |
+
+The current amount of memory available to virtual machines can be viewed in the following Performance Monitor counter, **Hyper-V Dynamic Memory Balancer – Available Memory**.
+
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
