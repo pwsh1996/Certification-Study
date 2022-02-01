@@ -9,8 +9,8 @@
 | --- | --- |
 | Lightweight Directory Access Protocol (LDAPv3) | TCP/UDP 389 |
 | Domain Name Service (DNS) | TCP/UDP 53 |
-| NTLM |  |
-| Kerberos |  |
+| NT LAN Manager (NTLM) | TCP 139/UDP 138,139 |
+| Kerberos | TCP/UDP 88 |
 
 *Resources:* 
 
