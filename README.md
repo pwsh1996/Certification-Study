@@ -200,6 +200,8 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-wind
 # Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
 ### 🔳 enable VM enhanced session mode
+> **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
+
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect?WT.mc_id=modinfra-39512-orthomas
