@@ -1,11 +1,14 @@
 # Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
 ## Deploy and manage AD DS domain controllers
 ### 🔳 deploy and manage domain controllers on-premises
-Active Directory Domain Services (AD DS) - "A searchable, hierarchical directory for user, group, and computer accounts"
+> **Active Directory Domain Services (AD DS)** - A searchable, hierarchical directory for user, group, and computer accounts
 
-Lightweight Directory Access Protocol (LDAP) - TCP 389 (default)
+> **Domain Controller (DC)** - A Windows Server host that makes its AD DS database available to other machines in a controlled manner
 
-Domain Controller (DC) - "A Windows Server host that makes its AD DS database available to other machines in a controlled manner"
+| Protocol | Port |
+| --- | --- |
+| Lightweight Directory Access Protocol (LDAP) | TCP 389 |
+
 *Resources:* 
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-?WT.mc_id=modinfra-39512-orthomas
