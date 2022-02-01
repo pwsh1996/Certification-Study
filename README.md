@@ -261,6 +261,7 @@ Also note the following about how Smart Paging is used:
 | Memory weight |	Provides Hyper-V with a way to determine how to distribute memory among virtual machines if there is not enough physical memory available in the computer to give every virtual machine its requested amount of memory. |
 
 The current amount of memory available to virtual machines can be viewed in the following Performance Monitor counter, **Hyper-V Dynamic Memory Balancer – Available Memory**.
+![image](https://user-images.githubusercontent.com/51274282/152041042-66f04885-e7db-4890-aa6f-865d0be4e582.png)
 
 *Resources:*
 
