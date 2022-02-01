@@ -198,10 +198,14 @@ https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/ne
 
 Powershell:
 ```powershell
-Get-VM | fl Name, DynamicMemoryEnabled MemoryMaximum, MemoryMinimum, MemoryStartup
+Get-VMMemory | fl -Property *
 ```
 ```powershell
-Set-VM -name <client01> -MemoryMinimumBytes 3GB -MemoryMaximum 5GB -MemoryStartupBytes 4GB
+Set-VMMemory -VMName <client01> -Buffer 20 -Priority 37 -MaximumBytes 5GB
+```
+You can also adjust the settings with, but it doesn't have the buffer or priority
+```powershell
+Get-VM -Name <client01> | Set-VM -MemoryMinimum 2GB
 ```
 
 > **Dynamic Memory** - If you have idle or low-load virtual machines, as in pooled Virtual Desktop Infrastructure (VDI) environments, Dynamic Memory enables you to increase consolidation and improve reliability for restart operations. You also gain agility in responding to requirement changes with these new capabilities.
@@ -240,6 +244,8 @@ The current amount of memory available to virtual machines can be viewed in the 
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+
+https://docs.microsoft.com/en-us/powershell/module/hyper-v/get-vmmemory?view=windowsserver2022-ps
 ### 🔳 configure Integrated Services
 *Resources:*
 
