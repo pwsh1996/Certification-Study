@@ -243,7 +243,7 @@ The current amount of memory available to virtual machines can be viewed in the 
 
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11)
 
 https://docs.microsoft.com/en-us/powershell/module/hyper-v/get-vmmemory?view=windowsserver2022-ps
 ### 🔳 configure Integrated Services
