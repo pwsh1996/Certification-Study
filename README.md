@@ -302,7 +302,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows
-# <a name="3"></a>[3/25] Manage virtual machines and containers *(15-20%)*
+# <a name="3"></a>[4/25] Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
 ### ✅ enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
@@ -337,7 +337,7 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-mor
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct
 
 https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true
-### 🔳 configure nested virtualization
+### ✅ configure nested virtualization
 > Note: Nested Virtualization is supported in both Azure and on-premises. However, the nested virtual machines are not supported for production purposes. Labs, testing environments, demo environments, etc, are more of it's purpose.
 
 **Intel CPUs with VT-x and EPT**
@@ -352,12 +352,24 @@ Set-VMProcessor -VMName "Win01" -ExposeVirtualizationExtensions $true
 ```
 > Note: When Hyper-V is running inside a VM, the VM must be turned off to adjust it's memory. Meaning that even if dynamic memory is enabled, the ammount of memory will not fluctuate. Any attempt to adjust the ammount of memory while it's on will fail.
 
-
+![image](https://user-images.githubusercontent.com/51274282/152213325-8750e004-9f48-43b6-9be9-f7277b811dc2.png)
 
 **Networking**
-- **Mac Address Spoofing** 
-- **Network Address Translation (NAT)**
+- **Mac Address Spoofing** In order for packets to be routed throu two virtual switches, MAC address spoofing must be enabled on the first (L1) level of virtual switch. You can do it with 
+```powershell
+Set-VMNetworkAdapter -VMName "Win01" -MacAddressSpoofing On
+```
 
+- **Network Address Translation (NAT)** This is best suited for cases where MAC address spoofing is not possible, like in a public cloud environment. First a virtual NAT switch must be created in the host VM (the "middle" VM) 
+```powershell
+New-VMSwitch -Name VmNAT -SwitchType Internal
+New-NetNat -Name LocalNAT -InternalIPInterfaceAddressPrefix "192.168.100.0/24"
+# Then assign an IP to the net adapter
+Get-NetAdapter "vEthernet (VmNat)" | New-NetIPAddress -IPAddress 192.168.100.1 -AddressFamily IPv4 -PrefixLength 24
+# Then in each nested VM assign an IP address on that network
+```
+
+> Note: In my personal experience I did not have to do either and the networking just worked ㄟ( ▔, ▔ )ㄏ
 
 *Resources:*
 
