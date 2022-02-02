@@ -265,24 +265,31 @@ https://docs.microsoft.com/en-us/azure/azure-arc/servers/onboard-windows-admin-c
 ### 🔳 assign Azure Policy Guest Configure
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-assign-policy-portal?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-assign-policy-portal
 ### 🔳 deploy Azure services using Azure Virtual Machine on non-Azure machines
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-enable-vm-insights?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-enable-vm-insights
 ### 🔳 manage updates for Windows machines
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/automation/update-management/overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/automation/update-management/overview
 ### 🔳 integrate Windows Servers with Log Analytics
+The Azure Log Analytics agent collects telemetry from Windows and Linux virtual machines in any cloud, on-premises machines, and those monitored by System Center Operations Manager and sends collected data to you Log Analytics workspace in Azure Monitor.
+
+> The Log Analytics agent is often referred to as the Microsoft Monitoring Agent (MMA).
+
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent#network-requirements?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent
+
+https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-windows
 ### 🔳 integrate Windows Servers with Azure Security Center
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/architecture/hybrid/hybrid-security-monitoring
 ### 🔳 manage IaaS virutal machines (VMs) in Azure that run Windows Server
+
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates
