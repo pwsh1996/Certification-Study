@@ -102,6 +102,10 @@ Install-ADDSDomainController -Credential (Get-Credential) -DomainName "recyberia
 
 
 🌳**Installing a new child or tree domain**
+To create a new child domain named test.recyberia.com use
+```powershell
+Install-ADDSDomain -Credential (Get-Credential) -NewDomainName "test" -ParentDomainName "recyberia.com" -InstallDNS -CreateDNSDelegation -DomainMode WinThreshold
+```
 
 *Resources:* 
 
