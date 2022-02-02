@@ -1,16 +1,18 @@
-[Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments](#1) <br />
-[Manage Windows Servers and workloads in a hybrid environment](#2) <br />
-[Manage virtual machines and containers](#3) <br />
-[Implement and manage an on-premises and hybrid networking infrastructure](#4) <br />
-[Manage storage and file services](#5)
+| Skills Measured | Percent of Exam |
+| --- | --- |
+| [Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments](#1) | 30-35% |
+| [Manage Windows Servers and workloads in a hybrid environment](#2) | 10-15% |
+| [Manage virtual machines and containers](#3) | 15-20% |
+| [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
+| [Manage storage and file services](#5) | 15-20% |
 
-🔳[79] Needs to be Studied
-📚[00] Read the Docs
-⏹[15] Did at Work
+🔳[72] Needs to be Studied
+📚[01] Read the Docs
+⏹[21] Did at Work
 ✅[07] Studied and did Hands-On Testing
 
 
-# <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
+# <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments
 ## Deploy and manage AD DS domain controllers
 ### ✅ deploy and manage domain controllers on-premises
 > **Active Directory Domain Services (AD DS)** - A searchable, hierarchical directory for user, group, and computer accounts
@@ -286,7 +288,7 @@ https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn
 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy
 ## Manage Windows Server by using  domain-based Group Policies
-### 🔳 implement Group Policy in AD DS
+### ⏹ implement Group Policy in AD DS
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)
@@ -298,7 +300,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy
-# <a name="2"></a>Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
+# <a name="2"></a>Manage Windows Servers and workloads in a hybrid environment
 ## Manage Windows Servers in a hybrid environment
 ### ⏹ deploy a Windows Admin Center gateway server
 *Resources:*
@@ -339,7 +341,7 @@ https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-enable-v
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/automation/update-management/overview
-### 🔳 integrate Windows Servers with Log Analytics
+### 📚 integrate Windows Servers with Log Analytics
 The Azure Log Analytics agent collects telemetry from Windows and Linux virtual machines in any cloud, on-premises machines, and those monitored by System Center Operations Manager and sends collected data to you Log Analytics workspace in Azure Monitor.
 
 > The Log Analytics agent is often referred to as the Microsoft Monitoring Agent (MMA).
@@ -374,7 +376,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows
-# <a name="3"></a>Manage virtual machines and containers *(15-20%)*
+# <a name="3"></a>Manage virtual machines and containers
 ## Manage Hyper-V and guest virtual machines
 ### ✅ enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
@@ -522,12 +524,10 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ma
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups
 ### 🔳 configure hypervisor scheduling types
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types
-
+*Resources:* <br />
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types <br />
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
-### 🔳 manage VM Checkpoints
+### ⏹ manage VM Checkpoints
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
@@ -543,7 +543,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831446(v=ws.11)
-### 🔳 configure Hyper-V network adapter
+### ⏹ configure Hyper-V network adapter
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
@@ -662,7 +662,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/windows/winrm
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/virtual-network/network-overview
-# <a name="4">Implement and manage an on-premises and hybrid networking infrastructure *(15-20%)*
+# <a name="4">Implement and manage an on-premises and hybrid networking infrastructure
 ## Implement on-premises and hybrid name resolution
 ### 🔳 integrate DNS with AD DS
 *Resources:*
@@ -693,7 +693,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top
-### 🔳 implement and configure DHCP server role (on-premises only)
+### ⏹ implement and configure DHCP server role (on-premises only)
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183630(v=ws.10)
@@ -701,7 +701,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:*
 
 https://support.microsoft.com/en-au/topic/fix-duplicate-ip-address-conflicts-on-a-dhcp-network-d68499da-69a3-da3b-4630-d17e502adf50
-### 🔳 create and manage scopes
+### ⏹ create and manage scopes
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183624(v=ws.10)
@@ -750,7 +750,7 @@ https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about?WT.mc_id=mo
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy
-# <a name="5"></a>Manage storage and file services *(15-20%)*
+# <a name="5"></a>Manage storage and file services
 ## Configure and manage Azure File Sync
 ### 🔳 create Azure File Sync service
 *Resources:*
@@ -834,7 +834,7 @@ https://docs.microsoft.com/en-us/windows-server/storage/file-server/smb-direct
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/storage/storage-qos/storage-qos-overview
-### 🔳 configure file systems
+### ⏹ configure file systems
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/storage/refs/refs-overview
