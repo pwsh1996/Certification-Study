@@ -5,6 +5,7 @@
 [Manage storage and file services](#5)
 
 🔳 Needs to be studied
+⏹ Did at work
 ✅ Studied and did hands-on testing
 
 
@@ -166,7 +167,7 @@ https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understandin
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts
 ## Create and manage AD DS security principals
-### 🔳 create and manage AD DS users and groups
+### ⏹ create and manage AD DS users and groups
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754661(v=ws.10)
@@ -187,11 +188,11 @@ https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a
 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/join-windows-vm
 ## Impliment and manage hybrid identities
-### 🔳 implement Azure AD Connect
+### ⏹ implement Azure AD Connect
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect-v2
-### 🔳 manage Azure AD Connect Synchrinization
+### ⏹ manage Azure AD Connect Synchrinization
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/hybrid/concept-azure-ad-connect-sync-architecture
@@ -203,11 +204,11 @@ https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad
-### 🔳 manage Azure AD DS
+### ⏹ manage Azure AD DS
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance
-### 🔳 manage Azure AD Connect Health
+### ⏹ manage Azure AD Connect Health
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect
@@ -234,7 +235,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy
 # <a name="2"></a>[0/15] Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
 ## Manage Windows Servers in a hybrid environment
-### 🔳 deploy a Windows Admin Center gateway server
+### ⏹ deploy a Windows Admin Center gateway server
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/deploy-wac-in-azure
@@ -242,7 +243,7 @@ https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azur
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-vm
-### 🔳 configure PowerShell Remoting
+### ⏹ configure PowerShell Remoting
 *Resources:*
 
 https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/running-remote-commands?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas
@@ -427,7 +428,7 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ab
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v
-### 🔳 implement high availability for virtual machines
+### ⏹ implement high availability for virtual machines
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica
@@ -441,13 +442,13 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
-### 🔳 configure NIC teaming
+### ⏹ configure NIC teaming
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
 
 https://docs.microsoft.com/en-us/windows-server/networking/technologies/nic-teaming/nic-teaming
-### 🔳 configure Hyper-V switch
+### ⏹ configure Hyper-V switch
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/hyper-v-virtual-switch
@@ -585,19 +586,19 @@ https://support.microsoft.com/en-au/topic/fix-duplicate-ip-address-conflicts-on-
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183624(v=ws.10)
-### 🔳 create and manage IP reservations
+### ⏹ create and manage IP reservations
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183698(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183698(v=ws.10)
 ### 🔳 implement DHCP high avalability
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn338978(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn338978(v=ws.11)
 ## Implement on-premises and hybrid network connectivity
 ### 🔳 implement and manage Remote Access role
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn636119(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn636119(v=ws.11)
 ### 🔳 implement and manage Azure Network Adapter
 *Resources:*
 
@@ -665,7 +666,7 @@ https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring
 
 https://docs.microsoft.com/en-us/azure/storage/files/files-manage-namespaces?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal
 ## Configure and manage Windows Server file shares
-### 🔳 configure Windows Server file share access
+### ⏹ configure Windows Server file share access
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10)
@@ -681,14 +682,14 @@ https://docs.microsoft.com/en-us/windows-server/storage/fsrm/quota-management
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/networking/branchcache/branchcache
-### 🔳 impliment and configure Distributed File System (DFS)
+### ⏹ impliment and configure Distributed File System (DFS)
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/dfs-overview
 
 https://docs.microsoft.com/en-us/windows-server/storage/dfs-replication/dfsr-overview
 ## Configure Windows Server storage
-### 🔳 configure disks and volumes
+### ⏹ configure disks and volumes
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-disks
@@ -702,7 +703,7 @@ https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/overview
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview
-### 🔳 configure Data Deduplication
+### ⏹ configure Data Deduplication
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/storage/data-deduplication/overview
