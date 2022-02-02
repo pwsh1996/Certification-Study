@@ -373,7 +373,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows
-# <a name="3"></a>[4/25] Manage virtual machines and containers *(15-20%)*
+# <a name="3"></a>[5/25] Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
 ### ✅ enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
@@ -574,10 +574,24 @@ https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-netw
 
 https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wac-containers
 ## Manage Azure Virtual Machines that run Windows Server
-### 🔳 manage data disks
-*Resources:*
+### ✅ manage data disks
+![image](https://user-images.githubusercontent.com/51274282/152251828-b19c6a72-a70d-45f2-9fbb-0f0c4ba852c0.png)
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal
+You can click on the disk and get some extra details, including the ability to select a different size for the disk.
+
+![image](https://user-images.githubusercontent.com/51274282/152254359-ddc5135a-09af-426c-a0db-3364830f009f.png)
+
+You can remove the data disk using the portal or with powershell like this
+```powershell
+$vm = Get-AzVM -ResourceGroupName "lab" -Name "dc02"
+
+Remove-AzVMDataDisk -VM $vm -Name "Data"
+
+Update-AzVM -ResourceGroupName "lab" -VM $vm
+```
+
+*Resources:* <br />
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal <br />
 ### ✅ resize Azure Virtual Machines
 After you create a virtual machine (VM), you can scale the VM up or down by changing the VM size.
 > Note: In some cases, you must deallocate the VM first. This can happen if the new size is not avalable on the hardware cluster that is currently hosting the VM.
