@@ -159,17 +159,22 @@ FSMO roles:
 - PDC emulator
 - Infrastructure master
 
-**Schema master FSMO role**
+
+**Schema master FSMO role** 
 `only one schema master per forest`
-The schema master is the DC responsible for performing updates to the directory schema, that is, the schema naming context or *LDAP://cn=schema,cn=configuration,dc=<domain>*. This DC is the only one that can process updates to the directory schema. Once the schema update is complete, it's replicated from the schema master to all other DCs in the directory.
-  
+The schema master is the DC responsible for performing updates to the directory schema, that is, the schema naming context or `LDAP://cn=schema,cn=configuration,dc=<domain>`. This DC is the only one that can process updates to the directory schema. Once the schema update is complete, it's replicated from the schema master to all other DCs in the directory.
+
 **Domain naming master FSMO role**
+`only one domain naming master per forest`
   
 **RID master FSMO role**
+`only one rid master per domain`
   
 **PDC emulator FSMO role**
+`only one pdc emulator per domain`
   
 **Infrasturcture master FSMO role**
+`only one infrasturcture master per domain`
 
 *Resources:*
 
