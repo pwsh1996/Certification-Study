@@ -1,4 +1,14 @@
-# Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
+[Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments](#1) <br />
+[Manage Windows Servers and workloads in a hybrid environment](#2) <br />
+[Manage virtual machines and containers](#3) <br />
+[Implement and manage an on-premises and hybrid networking infrastructure](#4) <br />
+[Manage storage and file services](#5)
+
+🔳 Needs to be studied
+✅ Studied and did hands-on testing
+
+
+# <a name="1"></a>[1/22] Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
 ## Deploy and manage AD DS domain controllers
 ### ✅ deploy and manage domain controllers on-premises
 > **Active Directory Domain Services (AD DS)** - A searchable, hierarchical directory for user, group, and computer accounts
@@ -222,7 +232,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy
-# Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
+# <a name="2"></a>[0/15] Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
 ## Manage Windows Servers in a hybrid environment
 ### 🔳 deploy a Windows Admin Center gateway server
 *Resources:*
@@ -291,7 +301,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows
-# Manage virtual machines and containers *(15-20%)*
+# <a name="3"></a>[3/25] Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
 ### ✅ enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
@@ -463,10 +473,61 @@ https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wa
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal
-### 🔳 resize Azure Virtual Machines
+### ✅ resize Azure Virtual Machines
+After you create a virtual machine (VM), you can scale the VM up or down by changing the VM size.
+> Note: In some cases, you must deallocate the VM first. This can happen if the new size is not avalable on the hardware cluster that is currently hosting the VM.
+
+> Note: if the VM uses Premium Storage, make sure that you choose an **s** version of the size to get Premium Storage support
+
+![image](https://user-images.githubusercontent.com/51274282/152105109-2798fe4d-898e-4a8d-a2e3-f7050c3c980c.png)
+
+You can also use the [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/) to resize a VM
+
+to see all your VMs
+```bash
+az vm list --output table
+```
+```
+Name      ResourceGroup    Location    Zones
+--------  ---------------  ----------  -------
+client01  LAB              centralus
+dc01      LAB              centralus
+dc02      LAB              centralus
+dc03      LAB              centralus
+```
+Get the compatible sizes
+```bash
+az vm list-vm-resize-options --resource-group "lab" --name "client01" --output table
+```
+```
+MaxDataDiskCount    MemoryInMb    Name                    NumberOfCores    OsDiskSizeInMb    ResourceDiskSizeInMb
+------------------  ------------  ----------------------  ---------------  ----------------  ----------------------
+4                   8192          Standard_D2a_v4         2                1047552           51200
+8                   16384         Standard_D4a_v4         4                1047552           102400
+16                  32768         Standard_D8a_v4         8                1047552           204800
+32                  65536         Standard_D16a_v4        16               1047552           409600
+32                  131072        Standard_D32a_v4        32               1047552           819200
+32                  196608        Standard_D48a_v4        48               1047552           1228800
+...
+```
+Resize the VM
+```bash
+az vm resize --resource-group lab -name client01 -size Standard_B2s
+```
+And you're done! 🎉
+
+Like noted above if the size you need isn't listed you'll have to deallocate the VM first
+```bash
+az vm deallocate --resource-group lab --name client01
+
+az vm resize --resource-group lab -name client01 -size Standard_B2s
+
+az vm start --resource-group lab --name client01
+```
+
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/resize-vm?WT.mc_id=modinfra-39512-orthomas&tabs=portal
+https://docs.microsoft.com/en-us/azure/virtual-machines/resize-vm
 ### 🔳 configure continuous delivery for Azure Virtual Machines
 *Resources:*
 
@@ -474,14 +535,14 @@ https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/cicd
 ### 🔳 configure connections to VMs
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/connect-logon
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/winrm?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/winrm
 ### 🔳 manage Azure Virtual Machines network configuration
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-network/network-overview?WT.mc_id=modinfra-39512-orthomas
-# Implement and manage an on-premises and hybrid networking infrastructure *(15-20%)*
+https://docs.microsoft.com/en-us/azure/virtual-network/network-overview
+# <a name="4">[0/20] Implement and manage an on-premises and hybrid networking infrastructure *(15-20%)*
 ## Implement on-premises and hybrid name resolution
 ### 🔳 integrate DNS with AD DS
 *Resources:*
@@ -569,7 +630,7 @@ https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about?WT.mc_id=mo
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy
-# Manage storage and file services *(15-20%)*
+# <a name="5"></a>[0/20] Manage storage and file services *(15-20%)*
 ## Configure and manage Azure File Sync
 ### 🔳 create Azure File Sync service
 *Resources:*
