@@ -130,15 +130,11 @@ Logs can be found at
 - %systemroot%\debug\dcpromo.log
 - %systemroot%\debug\dcpromoui.log
 
-*Resources:* 
-
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-
-
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-
-
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal
-
-https://docs.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2022-ps
+*Resources:* <br />
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100- <br />
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200- <br />
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal <br />
+https://docs.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2022-ps <br />
 ### 🔳 deploy and manage domain controllers in Azure
 *Resources:*
 
@@ -147,7 +143,7 @@ https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/iden
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/rodc/install-a-windows-server-2012-active-directory-read-only-domain-controller--rodc---level-200-
-### 🔳 troubleshoot flexible single master operations (FSMO) roles
+### ✅ troubleshoot flexible single master operations (FSMO) roles
 **Multi-master model** A multi-master enabled database, like AD, provides the flexibility of allowing changes to occur at any DC in the enterprise. But it also introduces the possibility of conflicts that can potentially lead to problems once the data is replicated. For certain types of changes, Windows incorporates methods to prevent conflicting Active Directory updates from occurring.
 
 **Single-master model** To prevent conflicting updates in Windows, the Active Directory performs updates to certain objects in a single-master fashion. In a single-master model, only one DC in the entire directory is allowed to process updates. Active Directory extends the single-master model found in earlier versions of Windows to include multiple rols, and the ability to transfer roles to any DC in the enterprise. Because an AD role isn't bound to a single DC, it's referred to as an FSMO role.
@@ -159,28 +155,66 @@ FSMO roles:
 - PDC emulator
 - Infrastructure master
 
-
-**Schema master FSMO role** 
+📜**Schema master FSMO role** 
 `only one schema master per forest`
-The schema master is the DC responsible for performing updates to the directory schema, that is, the schema naming context or `LDAP://cn=schema,cn=configuration,dc=<domain>`. This DC is the only one that can process updates to the directory schema. Once the schema update is complete, it's replicated from the schema master to all other DCs in the directory.
+The schema master is the DC responsible for performing updates to the directory schema, that is, the *schema* naming context or `LDAP://cn=schema,cn=configuration,dc=<domain>`. This DC is the only one that can process updates to the directory schema. Once the schema update is complete, it's replicated from the schema master to all other DCs in the directory.
 
-**Domain naming master FSMO role**
+📜**Domain naming master FSMO role**
 `only one domain naming master per forest`
+The domain naming master is the DC responsible for making changes to the forest-wide domain name space of the directory, that is, the *Partitions\Configuration* naming context or `LDAP://CN=Partitions,CN=Configuration,DC=<domain>`. This DC is the only one that can add or remove a domain from the directory. It can also add or remove cross references to domains in external directories.
   
-**RID master FSMO role**
+📜**RID master FSMO role**
 `only one rid master per domain`
+The rid master is the single DC responsible from processing RID Pool requests from all DCs within the domain. It's also responsible for removing an object from its domain and putting it in another domain during an object move. <br />
+When a DC creates a security principal object, like a user or group, it attaches a unique Security ID (SID) to the object. This SID consists of:
+- a domain SID that's the same for all SIDs created in a domain
+- a relative ID (RID) that's unique for each security Principal SID created in a domain <br />
+Each DC in a domain is allocated a pool of RIDs that it can use on new security principals it creates. WHen the DC's RID Pool falls below a threshold, it requests more from the RID master
   
-**PDC emulator FSMO role**
+📜**PDC emulator FSMO role**
 `only one pdc emulator per domain`
+the pdc emulator is necessary to synchronize time in an enterprise. Windows includes the W32Time (Windows Time) service that is required by Kerberos. All Windows-based computers within an enterprise use a common time, to ensure the use of a hierarchical relationship that controls authority. <br />
+The pdc emulator of a domain is authoritave for the domain. The PDC emulator at the root of the forest becomes authoritative for the enterprise, and shuld be configured to gather the time from an external source. <br />
+The pdc emulator role holder retains the following functions:
+- Password changes done by other DCs are replicated preferentially to the pdc emulator
+- When authentication failures occur on a DC because of an incorrect password, the failures are forwared to the pdc emulator before a bad password failure message is given to the user
+- Account lockout is processed on the pdc emulator
+- The pdc emulator performs all the functions that a Windows NT4.0 server-based pdc would perform
   
-**Infrasturcture master FSMO role**
+📜**Infrasturcture master FSMO role**
 `only one infrasturcture master per domain`
+The infrastructure master is the DC responsible for updating an object's SID and distinguished name (DN) in a cross-domain object reference. When an object in one domain is referenced by another object in another domain, it represents the reference by : the GUID, the SID (references to security principals), and the DN on the object being referenced.
+> Note: The Infrastructure Master role should be held by a DC that's not a Glocal Gatalog (GC). Unless all DCs are GCs then it isn't important which DC holds the role
 
-*Resources:*
+> Note: When the Recycle Bin optional feature is enabled, every DC is responsible to update its cross-domain object references. in which case there are no tasks associated with the Inrastructure Master and it isn't important which DC holds the role
 
-https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles
-  
-https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/transfer-or-seize-fsmo-roles-in-ad-ds
+To view what DCs hold what roles, go to Active Directory Users and Computers (*dsa.msc*), right-click on the domain object and select **Operations Masters** <br />
+![image](https://user-images.githubusercontent.com/51274282/152245699-2ab9905d-4b40-4194-94bd-a59650a24347.png)
+
+For the schema master add the Active Directory Schema snap-in to mmc, then right-click on "Active Directory Schema" and select Operations Masters
+
+![image](https://user-images.githubusercontent.com/51274282/152247091-8870f54a-e6a0-4d47-bbe3-144810e774c7.png)
+
+> Note: for the Active Directory Schema snap-in to be avalible, you may have to run `regsvr32 schmmgmt.dll` which should output something like "DllRegisterServer in schmmgmt.dll succeeded."
+
+For the domain naming role, go to Active Directory Domains and Trusts and right-click Active Directory Domains and Trusts and select Operationas Manster.
+
+![image](https://user-images.githubusercontent.com/51274282/152247432-a1f68eeb-ae45-43c5-b3e6-f6cf0fd8c1d6.png)
+
+You can also run this to get the role holders in a domain
+```
+DCdiag /test:KNowsofroleholders /v
+```
+
+To transfer FSMO roles
+```powershell
+Move-ADDirectoryServerOperationMasterRole -Identity "dc02" -OperationMasterRole InfrastructureMaster
+```
+
+*Resources:* <br />
+https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles <br />
+https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/transfer-or-seize-fsmo-roles-in-ad-ds <br />
+https://docs.microsoft.com/en-us/powershell/module/activedirectory/move-addirectoryserveroperationmasterrole?view=windowsserver2022-ps <br />
 ## Configure and manage multi-site, multi-domain, and multi-forest environments
 ### 🔳 configure and manage forest and domain trusts
 *Resources:*
