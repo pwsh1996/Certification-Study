@@ -338,6 +338,27 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ma
 
 https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true
 ### 🔳 configure nested virtualization
+> Note: Nested Virtualization is supported in both Azure and on-premises. However, the nested virtual machines are not supported for production purposes. Labs, testing environments, demo environments, etc, are more of it's purpose.
+
+**Intel CPUs with VT-x and EPT**
+- (Host) Windows Server 2016 / Windows 10 or greater
+
+**AMD EPYC/Ryzen CPUs**
+- (Host) Windows Server 2022 / Windows 11 or greater
+
+While the VM is off run 
+```powershell
+Set-VMProcessor -VMName "Win01" -ExposeVirtualizationExtensions $true
+```
+> Note: When Hyper-V is running inside a VM, the VM must be turned off to adjust it's memory. Meaning that even if dynamic memory is enabled, the ammount of memory will not fluctuate. Any attempt to adjust the ammount of memory while it's on will fail.
+
+
+
+**Networking**
+- **Mac Address Spoofing** 
+- **Network Address Translation (NAT)**
+
+
 *Resources:*
 
 https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization
