@@ -47,9 +47,13 @@ Install-ADDSForest -DomainName "recyberia.com" -InstallDNS
 ```
 If you want to be more granular
 ```powershell
-Install-ADDSForest -DomainName "recyberia" -DomainMode WinThreshold 
+Install-ADDSForest -DomainName "recyberia" -DomainNetbiosName "RECYBERIA" -DomainMode WinThreshold -ForestMode WinThreshold -LogPath "C:\Logs" -SysvolPath "C:\Logs\SYSVOL" -DatabasePath "C:\Databases\NTDS"
 ```
+
+`-DomainNetbiosName` Specifies the NetBIOS name for the root domain in the new forest
+
 `-DomainMode` Specifies the domain functional level 
+
 The accepted values are
 - Win2003 : *Windows Server 2003*
 - Win2008 : *Windows Server 2008*
@@ -59,6 +63,28 @@ The accepted values are
 - WinThreshold : *Windows Server 2016*
 
 The domain functional level cannot be lower than the forest functional level, but it can be higher
+
+`-ForestMode` Specifies the forest functional level
+
+The accepted values are
+- Win2003 : *Windows Server 2003* (Default when installing on Windows Server 2008 R2)
+- Win2008 : *Windows Server 2008*
+- Win2008R2 : *Windows Server 2008 R2* (Default)
+- Win2012 : *Windows Server 2012*
+- Win2012R2 : *Windows Server 2012 R2*
+- WinThreshold : *Windows Server 2016*
+
+`-LogPath` Specifies the fully quallified, non-UNC path to a directory where the log file for this operation is written
+
+*%SYSTEMROOT%\NTDS* (Default)
+
+`-SysvolPath` Specifies the fully quallified, non-UNC path to a directory where the Sysvol file is written
+
+*%SYSTEMROOT%*\SYSVOL (Default)
+
+`-DatabasePath` Specifies the fully quallified, non-UNC path to a directory that contains the domain database
+
+*%SYSTEMROOT%\NTDS*
 
 *Resources:* 
 
