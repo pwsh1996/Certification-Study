@@ -40,6 +40,12 @@ Cmdlet          Uninstall-ADDSDomainController                     1.0.0.0    ad
 ```
 For each Install, Add, and Uninstall command there is a Test command that takes the same arguments (excluding SkipPreChecks).
 
+| Task | Permissions |
+| --- | --- |
+| **Install a new forest** | **Local Administrator** of the computer |
+| **Install a new child domain or new domain tree** | **Enterprise Admin** |
+| **Install an additional domain controller on an existing domain** | **Domain Admin** |
+
 🌳**Installing a new forest root domain**
 To install a new forest named recyberia.com and be securely prompted to provide the Directory Services Restore Mode (DSRM) password use
 ```powershell
@@ -73,6 +79,8 @@ The accepted values are
 - Win2012 : *Windows Server 2012*
 - Win2012R2 : *Windows Server 2012 R2*
 - WinThreshold : *Windows Server 2016*
+
+> Note: Do not store the Active Directory database, log files, or SYSVOL folder on a data volume formatted with Resilient File System (ReFS)
 
 `-LogPath` Specifies the fully quallified, non-UNC path to a directory where the log file for this operation is written
 
@@ -258,27 +266,27 @@ https://docs.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent#
 ### 🔳 integrate Windows Servers with Azure Security Center
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/architecture/hybrid/hybrid-security-monitoring?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/architecture/hybrid/hybrid-security-monitoring
 ### 🔳 manage IaaS virutal machines (VMs) in Azure that run Windows Server
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/maintenance-and-updates
 ### 🔳 implement Azure Automation for hybrid workloads
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-automation-hybrid?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-automation-hybrid
 ### 🔳 create runbooks to automate tasks on target VMs
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/automation/automation-runbook-execution?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/automation/automation-runbook-execution
 ### 🔳 implement DSC to prevent configuration drift in IaaS machines
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows
 # Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
 ### ✅ enable VM enhanced session mode
@@ -310,9 +318,9 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-mor
 ### 🔳 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct
 
-https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true?WT.mc_id=modinfra-39512-orthomas
+https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true
 ### 🔳 configure nested virtualization
 *Resources:*
 
@@ -381,9 +389,9 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ma
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/deploying-graphics-devices-using-dda
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/deploying-storage-devices-using-dda?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/deploying-storage-devices-using-dda
 ### 🔳 configure VM Resource Groups
 *Resources:*
 
@@ -395,15 +403,15 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ma
 ### 🔳 configure hypervisor scheduling types
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
 ### 🔳 manage VM Checkpoints
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v
 ### 🔳 implement high availability for virtual machines
 *Resources:*
 
@@ -413,26 +421,26 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 ### 🔳 manage VHD and VHDX files
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831446(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831446(v=ws.11)
 ### 🔳 configure Hyper-V network adapter
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
 ### 🔳 configure NIC teaming
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
 
-https://docs.microsoft.com/en-us/windows-server/networking/technologies/nic-teaming/nic-teaming?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/networking/technologies/nic-teaming/nic-teaming
 ### 🔳 configure Hyper-V switch
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/hyper-v-virtual-switch?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/hyper-v-virtual-switch
 ## Create and manage containers
 ### 🔳 create Windows Server container images
 *Resources:*
 
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images
 ### 🔳 manage Windows Server container images
 *Resources:*
 
@@ -440,16 +448,16 @@ https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-contain
 ### 🔳 configure Container networking
 *Resources:*
 
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture
 ### 🔳 manage container instances
 *Resources:*
 
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wac-containers?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wac-containers
 ## Manage Azure Virtual Machines that run Windows Server
 ### 🔳 manage data disks
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal
 ### 🔳 resize Azure Virtual Machines
 *Resources:*
 
@@ -457,7 +465,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/resize-vm?WT.mc_id=modin
 ### 🔳 configure continuous delivery for Azure Virtual Machines
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/cicd-for-azure-vms?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/architecture/solution-ideas/articles/cicd-for-azure-vms
 ### 🔳 configure connections to VMs
 *Resources:*
 
@@ -473,23 +481,23 @@ https://docs.microsoft.com/en-us/azure/virtual-network/network-overview?WT.mc_id
 ### 🔳 integrate DNS with AD DS
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/active-directory-integrated-dns-zones?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/active-directory-integrated-dns-zones
 ### 🔳 create and manage zones and records
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816891(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816891(v=ws.10)
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816819(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816819(v=ws.10)
 ### 🔳 configure DNS forwarding/conditional forwarding
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816830(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816830(v=ws.10)
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc794735(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc794735(v=ws.10)
 ### 🔳 integrate Windows Server DNS with Azure DNS private zones
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/dns/private-dns-scenarios?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/dns/private-dns-scenarios
 ### 🔳 implement DNSSEC
 *Resources:*
 
@@ -498,19 +506,19 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 ### 🔳 implement and manage IPAM
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top
 ### 🔳 implement and configure DHCP server role (on-premises only)
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183630(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183630(v=ws.10)
 ### 🔳 resolve IP address issues in hybrid enviroments
 *Resources:*
 
-https://support.microsoft.com/en-au/topic/fix-duplicate-ip-address-conflicts-on-a-dhcp-network-d68499da-69a3-da3b-4630-d17e502adf50?WT.mc_id=modinfra-39512-orthomas
+https://support.microsoft.com/en-au/topic/fix-duplicate-ip-address-conflicts-on-a-dhcp-network-d68499da-69a3-da3b-4630-d17e502adf50
 ### 🔳 create and manage scopes
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183624(v=ws.10)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183624(v=ws.10)
 ### 🔳 create and manage IP reservations
 *Resources:*
 
@@ -527,23 +535,23 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 ### 🔳 implement and manage Azure Network Adapter
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter
 ### 🔳 implement and manage Azure Extended Network
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network
 ### 🔳 implement and manage Network Policy Server role
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831683(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831683(v=ws.11)
 ### 🔳 implement Web Application Proxy
 *Resources:*
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn584107(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn584107(v=ws.11)
 ### 🔳 implement Azure Relay
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it
 ### 🔳 implement site-to-site virtual private network (VPN)
 *Resources:*
 
@@ -555,7 +563,7 @@ https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about?WT.mc_id=mo
 ### 🔳 implement Azure AD Application Proxy
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy
 # Manage storage and file services *(15-20%)*
 ## Configure and manage Azure File Sync
 ### 🔳 create Azure File Sync service
@@ -573,7 +581,7 @@ https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-
 ### 🔳 register servers
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration
 ### 🔳 create server endpoints
 *Resources:*
 
@@ -581,11 +589,11 @@ https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoi
 ### 🔳 configure cloud tiering
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-how-to-manage-tiered-files?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-how-to-manage-tiered-files
 ### 🔳 monitor File Sync
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring
 ### 🔳 migrate DFS to Azure File Sync
 *Resources:*
 
@@ -602,47 +610,47 @@ https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-mana
 ### 🔳 configure File Server Resource Manger (FSRM) quotas
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/fsrm/quota-management?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/fsrm/quota-management
 ### 🔳 configure BranchCache
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/networking/branchcache/branchcache?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/networking/branchcache/branchcache
 ### 🔳 impliment and configure Distributed File System (DFS)
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/dfs-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/dfs-overview
 
-https://docs.microsoft.com/en-us/windows-server/storage/dfs-replication/dfsr-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/dfs-replication/dfsr-overview
 ## Configure Windows Server storage
 ### 🔳 configure disks and volumes
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-disks?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-disks
 
-https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-basic-volumes?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-basic-volumes
 ### 🔳 configure and manage Storage Spaces
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/overview
 ### 🔳 configure and manage Storage Replica
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview
 ### 🔳 configure Data Deduplication
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/data-deduplication/overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/data-deduplication/overview
 ### 🔳 configure SMB direct
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/file-server/smb-direct?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/file-server/smb-direct
 ### 🔳 configure Storage Quality of Service (QoS)
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/storage-qos/storage-qos-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/storage-qos/storage-qos-overview
 ### 🔳 configure file systems
 *Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/storage/refs/refs-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/refs/refs-overview
 
-https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview
