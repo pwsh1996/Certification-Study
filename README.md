@@ -86,6 +86,22 @@ The accepted values are
 
 *%SYSTEMROOT%\NTDS*
 
+**Installing an addtional (replica) domain controller**
+To install a domain controller and DNS server in the recyberia.com domain and be prompted to supply the domain Administrator credentials and the DSRM password use
+```powershell
+Install-ADDSDomainController -Credential (Get-Credential) -DomainName "Recyberia.com"
+```
+If you want to be more granular
+```powershell
+
+```
+
+
+
+
+
+**Installing a new child or tree domain**
+
 *Resources:* 
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-
@@ -93,6 +109,8 @@ https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-ac
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal
+
+https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-ds-simplified-administration
 ### 🔳 deploy and manage domain controllers in Azure
 *Resources:*
 
