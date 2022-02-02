@@ -4,12 +4,13 @@
 [Implement and manage an on-premises and hybrid networking infrastructure](#4) <br />
 [Manage storage and file services](#5)
 
-🔳 Needs to be studied
-⏹ Did at work
-✅ Studied and did hands-on testing
+🔳[79] Needs to be Studied
+📚[00] Read the Docs
+⏹[15] Did at Work
+✅[07] Studied and did Hands-On Testing
 
 
-# <a name="1"></a>[2/22] Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
+# <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
 ## Deploy and manage AD DS domain controllers
 ### ✅ deploy and manage domain controllers on-premises
 > **Active Directory Domain Services (AD DS)** - A searchable, hierarchical directory for user, group, and computer accounts
@@ -297,7 +298,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy
-# <a name="2"></a>[0/15] Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
+# <a name="2"></a>Manage Windows Servers and workloads in a hybrid environment *(10-15%)*
 ## Manage Windows Servers in a hybrid environment
 ### ⏹ deploy a Windows Admin Center gateway server
 *Resources:*
@@ -373,7 +374,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-overview
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows
 
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows
-# <a name="3"></a>[5/25] Manage virtual machines and containers *(15-20%)*
+# <a name="3"></a>Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
 ### ✅ enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
@@ -661,7 +662,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/windows/winrm
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/virtual-network/network-overview
-# <a name="4">[0/20] Implement and manage an on-premises and hybrid networking infrastructure *(15-20%)*
+# <a name="4">Implement and manage an on-premises and hybrid networking infrastructure *(15-20%)*
 ## Implement on-premises and hybrid name resolution
 ### 🔳 integrate DNS with AD DS
 *Resources:*
@@ -749,7 +750,7 @@ https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about?WT.mc_id=mo
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy
-# <a name="5"></a>[0/20] Manage storage and file services *(15-20%)*
+# <a name="5"></a>Manage storage and file services *(15-20%)*
 ## Configure and manage Azure File Sync
 ### 🔳 create Azure File Sync service
 *Resources:*
