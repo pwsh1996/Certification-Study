@@ -14,18 +14,51 @@
 
 **Deploy**
 
-**Server Manager**
+> *Note:* All network interfaces on the DC should have a static IP for reliable DNS operation
 
-Manage > Add Roles and Features > Role-based or feature-based installation > Active Directory Domain Services
+Start with adding the role. This command installs the AD DS server role and installs the AD DS and AD LDS server administration tools
+```powershell
+Install-WindowsFeature -name AD-Domain-Services -IncludeManagementTools
+```
+Installing the feature **Active Directory Domain Services** installs the PowerShell module **ADDSDeployment**, You can see what all commands it has with 
+```powershell
+Get-Command -module ADDSDeployment
+```
+```
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Cmdlet          Add-ADDSReadOnlyDomainControllerAccount            1.0.0.0    addsdeployment
+Cmdlet          Install-ADDSDomain                                 1.0.0.0    addsdeployment
+Cmdlet          Install-ADDSDomainController                       1.0.0.0    addsdeployment
+Cmdlet          Install-ADDSForest                                 1.0.0.0    addsdeployment
+Cmdlet          Test-ADDSDomainControllerInstallation              1.0.0.0    addsdeployment
+Cmdlet          Test-ADDSDomainControllerUninstallation            1.0.0.0    addsdeployment
+Cmdlet          Test-ADDSDomainInstallation                        1.0.0.0    addsdeployment
+Cmdlet          Test-ADDSForestInstallation                        1.0.0.0    addsdeployment
+Cmdlet          Test-ADDSReadOnlyDomainControllerAccountCreation   1.0.0.0    addsdeployment
+Cmdlet          Uninstall-ADDSDomainController                     1.0.0.0    addsdeployment
+```
+For each Install, Add, and Uninstall command there is a Test command that takes the same arguments (excluding SkipPreChecks).
 
-Promote this Server to be a domain controller
-- Add a domain controller to an existing domain
-- Add a new domainto an existing forest 
-- Add a new forest
+**Installing a new forest root domain**
+To install a new forest named recyberia.com and be securely prompted to provide the Directory Services Restore Mode (DSRM) password use
+```powershell
+Install-ADDSForest -DomainName "recyberia.com" -InstallDNS
+```
+If you want to be more granular
+```powershell
+Install-ADDSForest -DomainName "recyberia" -DomainMode WinThreshold 
+```
+`-DomainMode` Specifies the domain functional level 
+The accepted values are
+- Win2003 : *Windows Server 2003*
+- Win2008 : *Windows Server 2008*
+- Win2008R2 : *Windows Server 2008 R2* (Default)
+- Win2012 : *Windows Server 2012*
+- Win2012R2 : *Windows Server 2012 R2*
+- WinThreshold : *Windows Server 2016*
 
-Functional level
-
-Set the DNS to itself
+The domain functional level cannot be lower than the forest functional level, but it can be higher
 
 *Resources:* 
 
