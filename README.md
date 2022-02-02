@@ -199,7 +199,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/dsc-windows?W
 https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-windows?WT.mc_id=modinfra-39512-orthomas
 # Manage virtual machines and containers *(15-20%)*
 ## Manage Hyper-V and guest virtual machines
-### 🔳 enable VM enhanced session mode
+### ✅ enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
 
 ![image](https://user-images.githubusercontent.com/51274282/152070460-c501629c-a57a-4af4-84cd-04eaee0cd1d3.png)
