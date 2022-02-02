@@ -202,9 +202,29 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-wind
 ### 🔳 enable VM enhanced session mode
 > **Virtual Machine Connection (VMConnect)** lets you use a computer's local resources in a virtual machine, like removable USB flash drive or a printer. Enhanced session mode also lets you resize the VMConnect window.
 
+![image](https://user-images.githubusercontent.com/51274282/152070460-c501629c-a57a-4af4-84cd-04eaee0cd1d3.png)
+
+When Applied there is a button to switch to enhanced session mode at the top of VMConnect
+![image](https://user-images.githubusercontent.com/51274282/152070762-82c19eb1-8984-4cfa-ac98-e881e9d7c751.png)
+
+If you need to edit your connection settings you can run 
+
+```powershell
+VMConnect.exe <ServerName> <VMName> /edit
+```
+Requirements for using local resources
+- The Hyper-V host must have **Enhanced session mode policy** and **Enhanced session mode** settings turned on.
+- The computer on which you use VMConnect must run Windows 10, Windows 8.1, Windows Server 2016, or Windows Server 2012 R2.
+- The virtual machine must have Remote Desktop Services enabled, and run Windows 10, Windows 8.1, Windows Server 2016, or Windows Server 2012 R2 as the guest operating system. 
+
+Other Benifits
+> **Prevent a VMConnect user from taking over another user's VMConnect session** - Not having enhanced session mode turned on may pose a security and privacy risk. If a user is connected and logged on to a virtual machine through VMConnect and another authorized user connects to the same virtual machine, the session will be taken over by the second user and the first user will lose the session. The second user will be able to view the first user's desktop, documents, and applications.
+
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect
+
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect
 ### 🔳 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
 *Resources:*
 
