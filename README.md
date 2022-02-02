@@ -40,7 +40,7 @@ Cmdlet          Uninstall-ADDSDomainController                     1.0.0.0    ad
 ```
 For each Install, Add, and Uninstall command there is a Test command that takes the same arguments (excluding SkipPreChecks).
 
-**Installing a new forest root domain**
+🌳**Installing a new forest root domain**
 To install a new forest named recyberia.com and be securely prompted to provide the Directory Services Restore Mode (DSRM) password use
 ```powershell
 Install-ADDSForest -DomainName "recyberia.com" -InstallDNS
@@ -86,21 +86,22 @@ The accepted values are
 
 *%SYSTEMROOT%\NTDS*
 
-**Installing an addtional (replica) domain controller**
+🌳**Installing an addtional (replica) domain controller**
 To install a domain controller and DNS server in the recyberia.com domain and be prompted to supply the domain Administrator credentials and the DSRM password use
 ```powershell
-Install-ADDSDomainController -Credential (Get-Credential) -DomainName "Recyberia.com"
+Install-ADDSDomainController -Credential (Get-Credential) -DomainName "recyberia.com" -InstallDNS
 ```
 If you want to be more granular
 ```powershell
-
+Install-ADDSDomainController -Credential (Get-Credential) -DomainName "recyberia.com" -InstallDNS -DatabasePath "C:\Windows\NTDS" -LogPath "C:\Windows\Logs" -SysvolPath "C:\Windows\SYSVOL" -ReplicationSourceDC "dco1.recyberia.com" -NoGlobalCatalog
 ```
 
+`-ReplicationSourceDC` Specifies the name of the domain controller to be used as the source for replicating to this domain controller.
+
+`-NoGlobalCatalog` Indicates that the DC will not be a global catalog server. By default the domain controller that you are installing is a global catalog server.
 
 
-
-
-**Installing a new child or tree domain**
+🌳**Installing a new child or tree domain**
 
 *Resources:* 
 
@@ -110,7 +111,7 @@ https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/manage/ad-ds-simplified-administration
+https://docs.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2022-ps
 ### 🔳 deploy and manage domain controllers in Azure
 *Resources:*
 
