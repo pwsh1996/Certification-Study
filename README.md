@@ -299,6 +299,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/features-wind
 ![image](https://user-images.githubusercontent.com/51274282/152070460-c501629c-a57a-4af4-84cd-04eaee0cd1d3.png)
 
 When Applied there is a button to switch to enhanced session mode at the top of VMConnect
+
 ![image](https://user-images.githubusercontent.com/51274282/152070762-82c19eb1-8984-4cfa-ac98-e881e9d7c751.png)
 
 If you need to edit your connection settings you can run 
