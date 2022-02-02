@@ -9,7 +9,7 @@
 ✅ Studied and did hands-on testing
 
 
-# <a name="1"></a>[1/22] Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
+# <a name="1"></a>[2/22] Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
 ## Deploy and manage AD DS domain controllers
 ### ✅ deploy and manage domain controllers on-premises
 > **Active Directory Domain Services (AD DS)** - A searchable, hierarchical directory for user, group, and computer accounts
