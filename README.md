@@ -1,6 +1,6 @@
 # Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments *(30-35%)*
 ## Deploy and manage AD DS domain controllers
-### 🔳 deploy and manage domain controllers on-premises
+### ✅ deploy and manage domain controllers on-premises
 > **Active Directory Domain Services (AD DS)** - A searchable, hierarchical directory for user, group, and computer accounts
 
 > **Domain Controller (DC)** - A Windows Server host that makes its AD DS database available to other machines in a controlled manner
@@ -114,6 +114,10 @@ To create a new child domain named test.recyberia.com use
 ```powershell
 Install-ADDSDomain -Credential (Get-Credential) -NewDomainName "test" -ParentDomainName "recyberia.com" -InstallDNS -CreateDNSDelegation -DomainMode WinThreshold
 ```
+
+Logs can be found at
+- %systemroot%\debug\dcpromo.log
+- %systemroot%\debug\dcpromoui.log
 
 *Resources:* 
 
