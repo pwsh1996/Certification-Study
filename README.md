@@ -148,9 +148,34 @@ https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/iden
 
 https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/rodc/install-a-windows-server-2012-active-directory-read-only-domain-controller--rodc---level-200-
 ### 🔳 troubleshoot flexible single master operations (FSMO) roles
+**Multi-master model** A multi-master enabled database, like AD, provides the flexibility of allowing changes to occur at any DC in the enterprise. But it also introduces the possibility of conflicts that can potentially lead to problems once the data is replicated. For certain types of changes, Windows incorporates methods to prevent conflicting Active Directory updates from occurring.
+
+**Single-master model** To prevent conflicting updates in Windows, the Active Directory performs updates to certain objects in a single-master fashion. In a single-master model, only one DC in the entire directory is allowed to process updates. Active Directory extends the single-master model found in earlier versions of Windows to include multiple rols, and the ability to transfer roles to any DC in the enterprise. Because an AD role isn't bound to a single DC, it's referred to as an FSMO role.
+
+FSMO roles:
+- Schema master
+- Domain naming master
+- RID master
+- PDC emulator
+- Infrastructure master
+
+**Schema master FSMO role**
+`only one schema master per forest`
+The schema master is the DC responsible for performing updates to the directory schema, that is, the schema naming context or *LDAP://cn=schema,cn=configuration,dc=<domain>*. This DC is the only one that can process updates to the directory schema. Once the schema update is complete, it's replicated from the schema master to all other DCs in the directory.
+  
+**Domain naming master FSMO role**
+  
+**RID master FSMO role**
+  
+**PDC emulator FSMO role**
+  
+**Infrasturcture master FSMO role**
+
 *Resources:*
 
 https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles
+  
+https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/transfer-or-seize-fsmo-roles-in-ad-ds
 ## Configure and manage multi-site, multi-domain, and multi-forest environments
 ### 🔳 configure and manage forest and domain trusts
 *Resources:*
