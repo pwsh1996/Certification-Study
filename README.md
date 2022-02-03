@@ -134,10 +134,11 @@ Logs can be found at
 - %systemroot%\debug\dcpromoui.log
 
 *Resources:* <br />
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100- <br />
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200- <br />
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal <br />
-https://docs.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2022-ps <br />
+[Install Active Directory Domain Services (Level 100) | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-) <br />
+[Install a New Windows Server 2012 Active Directory Forest (Level 200) | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-a-new-windows-server-2012-active-directory-forest--level-200-) <br />
+[What's New in Active Directory Domain Services INstallation and Removal | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal) <br />
+[Install-ADDSForest | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2022-ps) <br />
+[Active Directory Domain Services Deep Dive | John Savill YouTube](https://www.youtube.com/watch?v=4qC7H-y7oKI)
 ### 🔳 deploy and manage domain controllers in Azure
 *Resources:*
 
@@ -215,9 +216,9 @@ Move-ADDirectoryServerOperationMasterRole -Identity "dc02" -OperationMasterRole 
 ```
 
 *Resources:* <br />
-https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles <br />
-https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/transfer-or-seize-fsmo-roles-in-ad-ds <br />
-https://docs.microsoft.com/en-us/powershell/module/activedirectory/move-addirectoryserveroperationmasterrole?view=windowsserver2022-ps <br />
+[Active Directory FSMO roles in Windows | Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/fsmo-roles) <br />
+[Transfer or seize FSMO roles in Active Directory Domain Services | Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/transfer-or-seize-fsmo-roles-in-ad-ds) <br />
+[Move-ADDirectoryServerOperationMasterRole | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/activedirectory/move-addirectoryserveroperationmasterrole?view=windowsserver2022-ps)
 ## Configure and manage multi-site, multi-domain, and multi-forest environments
 ### 🔳 configure and manage forest and domain trusts
 *Resources:*
@@ -400,11 +401,9 @@ Requirements for using local resources
 Other Benifits
 > **Prevent a VMConnect user from taking over another user's VMConnect session** - Not having enhanced session mode turned on may pose a security and privacy risk. If a user is connected and logged on to a virtual machine through VMConnect and another authorized user connects to the same virtual machine, the session will be taken over by the second user and the first user will lose the session. The second user will be able to view the first user's desktop, documents, and applications.
 
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect
+*Resources:* <br />
+[Use local resources on Hyper-V virtual machine with VMConnect | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect) <br />
+[Hyper-V Virtual Machine Connection | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect)
 ### 🔳 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
 *Resources:*
 
@@ -445,9 +444,8 @@ Get-NetAdapter "vEthernet (VmNat)" | New-NetIPAddress -IPAddress 192.168.100.1 -
 
 > Note: In my personal experience I did not have to do either and the networking just worked ㄟ( ▔, ▔ )ㄏ
 
-*Resources:*
-
-https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization
+*Resources:* <br />
+[Run Hyper-V in a Virtual Machine with Nested Virtualization | Microsoft Docs](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/user-guide/nested-virtualization)
 ### ✅ configure VM memory
 
 ![image](https://user-images.githubusercontent.com/51274282/151913437-dfee810b-7999-416a-9d5c-c2e9e412ce3b.png)
@@ -499,9 +497,8 @@ The current amount of memory available to virtual machines can be viewed in the 
 ![image](https://user-images.githubusercontent.com/51274282/152041042-66f04885-e7db-4890-aa6f-865d0be4e582.png)
 
 *Resources:* <br />
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11) <br />
-https://docs.microsoft.com/en-us/powershell/module/hyper-v/get-vmmemory
-
+[Hyper-V Dynamic Memory Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11)) <br />
+[Get-VMMemory | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/hyper-v/get-vmmemory)
 ### ✅ configure Integrated Services
 Integration services (also called integration components), are services that allow the virtual machine to communicate with the Hyper-V host. Many of these services are conveniences while others can be quite important to the VM's ability to function
 
@@ -529,8 +526,8 @@ They are also managable from the guest, although it's best to do it from the hos
 |  | vmiccmsession | Provides a way to manage VMs with PowerShell without a network connection | Low |
 
 *Resources:* <br />
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services <br />
-https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/integration-services
+[Manage Hyper-V Integration Services | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services) <br />
+[Hyper-V Integration Services | Microsoft Docs](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/integration-services)
 ### 🔳 configure Discrete Device Assignment
 *Resources:*
 
@@ -602,7 +599,7 @@ https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wa
 ### ✅ manage data disks
 ![image](https://user-images.githubusercontent.com/51274282/152251828-b19c6a72-a70d-45f2-9fbb-0f0c4ba852c0.png)
 
-You can click on the disk and get some extra details, including the ability to select a different size for the disk.
+You can click on the disk and get some extra details, including the ability to select a different size for the disk (you can only go up in size).
 
 ![image](https://user-images.githubusercontent.com/51274282/152254359-ddc5135a-09af-426c-a0db-3364830f009f.png)
 
@@ -616,7 +613,8 @@ Update-AzVM -ResourceGroupName "lab" -VM $vm
 ```
 
 *Resources:* <br />
-https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal <br />
+[Attach a managed data disk to a Windows VM by using the Azure portal | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/attach-managed-disk-portal) <br />
+[Microsoft Azure Managed Disk LIVE Resize | John Savill YouTube](https://www.youtube.com/watch?v=VrtAcOH6S-w)
 ### ✅ resize Azure Virtual Machines
 After you create a virtual machine (VM), you can scale the VM up or down by changing the VM size.
 > Note: In some cases, you must deallocate the VM first. This can happen if the new size is not avalable on the hardware cluster that is currently hosting the VM.
@@ -670,7 +668,7 @@ az vm start --resource-group lab --name client01
 ```
 
 *Resources:* <br />
-https://docs.microsoft.com/en-us/azure/virtual-machines/resize-vm
+[Change the size of a virtual machine | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/resize-vm)
 ### 🔳 configure continuous delivery for Azure Virtual Machines
 *Resources:*
 
