@@ -558,11 +558,48 @@ Core Hyper-V concepts to understand
 
 **Hypervisor scheduler types**
 
-🕓 The **Classic Scheduler**
+🕓 The **Classic Scheduler** <br />
+The classic scheduler provides a fair share, preemptive round-robin scheduling model for guest VPs.
+
+Classic is the default on Windows Server 2016 and earlier
 
 🕗 The **Core Scheduler**
+The core scheduler offers a strong security boundary for guest workload isolation, and reduced performance variability for workloads inside of VMs that are running on an SMT-enabled virtualization host. The scheduler can iptionally expose SMT pairs to guest VMs. <br />
+The overall result of the core scheduler is that:
+- Guest VPs are contrained to run on underlying physicalcore pairs, isolating a VM to processor core boundaries, thus reducing vulnerability to side-channel snooping attacks from malicious VMs.
+- Variability in throughput is significantly reduced.
+- Performance is potentially reduced, because if only one of a group of VPs can run, only one of the instruction streams in the core executes while the other is left idle.
+- The OS and appllications running in the guest VM can utilize SMT
+
+Core is the defualt Windows Server 2019 on onward
 
 🕥 The **Root Scheduler**
+
+The root scheduler lets the hypervisor cede control of work scheduling to the root partition . The NT scheduler in theroot partition's OS instance manages all aspects of scheduling work to system LPs. It enables things like Windows Defender Application Guard (WDAG) on the host OS.
+
+Root is default on Windows 10 version 1803 on onward (should not be used in Windows Server)
+
+🚧**Managing the Scheduler**🚧
+
+To set it on the guest VM use
+```powershell
+Set-VMProcessor -VMName "Win01" -HwThreadCountPerCore 0
+```
+> Note: Setting -HwThreadCountPerCore = 0 means it will use what the host is set to, you can also use 1 or 2 
+
+To set it on the hostuse 
+```
+bcdedit /set hypervisorschedulertype Core
+```
+You can use Classic, Core, or Root
+
+To see what the current scheduler is, there is an event log with the Event ID=2 that show the type.
+- 0x1 - Classic Scheduler, SMT disabled
+- 0x2 - Classic Scheduler
+- 0x3 - Core Scheduler
+- 0x4 - Root Scheduler
+
+![image](https://user-images.githubusercontent.com/51274282/152429491-bcc534df-109d-4ba3-89f0-9ae203485809.png)
 
 *Resources:* <br />
 [Managing Hyper-V hypervisor scheduler types | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types) <br />
