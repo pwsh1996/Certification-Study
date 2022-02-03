@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[70] Needs to be Studied
-📚[02] Read the Docs
+🔳[69] Needs to be Studied
+📚[03] Read the Docs
 ⏹[21] Did at Work
 ✅[08] Studied and did Hands-On Testing
 
