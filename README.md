@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[65] Needs to be Studied
-📚[06] Read the Docs
+🔳[64] Needs to be Studied
+📚[07] Read the Docs
 ⏹[21] Did at Work
 ✅[09] Studied and did Hands-On Testing
 
@@ -354,11 +354,9 @@ The Azure Log Analytics agent collects telemetry from Windows and Linux virtual 
 
 > The Log Analytics agent is often referred to as the Microsoft Monitoring Agent (MMA).
 
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent
-
-https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-windows
+*Resources:* <br />
+[Log Analytics agent overview | Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-monitor/agents/log-analytics-agent) <br />
+[Log Analytics virtual machine extension for Windows | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/oms-windows)
 ### 🔳 integrate Windows Servers with Azure Security Center
 *Resources:*
 
@@ -547,9 +545,8 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/de
 *Resources:* <br />
 [Hyper-V Host CPU Resource Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-minroot-2016)
 ### 🔳 configure VM CPU Groups
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups
+*Resources:* <br />
+[Virtual Machine Resource Controls | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups)
 ### ✅ configure hypervisor scheduling types
 There are different virtual processor scheduling modes that determine how the hypervisor allocaates and manages work across guest virtual processors. You can select hypervisor scheduler types that are best suited for the guest VMs and configure the VMs to take advantage of the scheduling logic 
 
@@ -640,9 +637,8 @@ https://docs.microsoft.com/en-us/windows-server/networking/technologies/nic-team
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/hyper-v-virtual-switch
 ## Create and manage containers
 ### 🔳 create Windows Server container images
-*Resources:*
-
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images
+*Resources:* <br />
+[Container Base Images | Microsoft Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images)
 ### 🔳 manage Windows Server container images
 *Resources:*
 
@@ -770,10 +766,9 @@ https://docs.microsoft.com/en-us/azure/dns/private-dns-scenarios
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj200221(v=ws.11)?WT.mc_id=modinfra-39512-orthomas
 ## Manage IP addressing in on-premises and hybrid scenarios
-### 🔳 implement and manage IPAM
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top
+### 📚 implement and manage IPAM
+*Resources:* <br />
+[IP Address Management (IPAM) | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top)
 ### ⏹ implement and configure DHCP server role (on-premises only)
 *Resources:*
 
