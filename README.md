@@ -7,10 +7,9 @@
 | [Manage storage and file services](#5) | 15-20% |
 
 🔳[69] Needs to be Studied
-📚[03] Read the Docs
+📚[02] Read the Docs
 ⏹[21] Did at Work
-✅[08] Studied and did Hands-On Testing
-
+✅[09] Studied and did Hands-On Testing
 
 # <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments
 ## Deploy and manage AD DS domain controllers
@@ -544,7 +543,7 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ma
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups
-### 📚 configure hypervisor scheduling types
+### ✅ configure hypervisor scheduling types
 There are different virtual processor scheduling modes that determine how the hypervisor allocaates and manages work across guest virtual processors. You can select hypervisor scheduler types that are best suited for the guest VMs and configure the VMs to take advantage of the scheduling logic 
 
 > Simultaneous multithreading (SMT) - A technique utilized in modern processor designs that allow the processor's resources to be shared by seperate, independent execution threads. The individual technologies are Intel HyperThreading and AMD SMT
