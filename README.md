@@ -6,10 +6,10 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[72] Needs to be Studied
-📚[01] Read the Docs
+🔳[70] Needs to be Studied
+📚[02] Read the Docs
 ⏹[21] Did at Work
-✅[07] Studied and did Hands-On Testing
+✅[08] Studied and did Hands-On Testing
 
 
 # <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments
@@ -498,15 +498,39 @@ Also note the following about how Smart Paging is used:
 The current amount of memory available to virtual machines can be viewed in the following Performance Monitor counter, **Hyper-V Dynamic Memory Balancer – Available Memory**.
 ![image](https://user-images.githubusercontent.com/51274282/152041042-66f04885-e7db-4890-aa6f-865d0be4e582.png)
 
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11)
-
+*Resources:* <br />
+https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831766(v=ws.11) <br />
 https://docs.microsoft.com/en-us/powershell/module/hyper-v/get-vmmemory
-### 🔳 configure Integrated Services
-*Resources:*
 
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services
+### ✅ configure Integrated Services
+Integration services (also called integration components), are services that allow the virtual machine to communicate with the Hyper-V host. Many of these services are conveniences while others can be quite important to the VM's ability to function
+
+They can be turned on and off in Hyper-V Manager or in PowerShell
+
+![image](https://user-images.githubusercontent.com/51274282/152277044-cf4d4e90-f8ae-413e-a35e-1fe785c413c8.png)
+
+```powershell
+Get-VMIntegrationService -VMName "Win01"
+```
+```powershell
+Enable-VMIntegrationService -VMName "Win01" -Name "Guest Service Interface"
+# You can also use Disable-VMIntegrationService to disable it
+```
+They are also managable from the guest, although it's best to do it from the host
+
+| Powershell Name | Windows Service Name | Description | Impact if disabled |
+| --- | --- | --- | --- |
+| Guest Service Interface | vmicguestinterface | Provides an interface for the Hyper-V to copy files from the VM | Low |
+| Heartbeat | vmicheartbeat  | Reports that the virtual machine is running correctly | Varies |
+| Key-Value Pair Exchange | vmickvpexchange | Provides a way to exchange basic metadata between the VM and host | Varies |
+| Shutdown | vmicshutdown | Allows the host to trigger VMs shutdown | High |
+| Time Synchronization | vmictimesync | Synchronizes the VM's clock with the host's clock | High |
+| VSS | vmicvss | Allows Volume Shadow Copy to back up the VM without shutting it down | Varies |
+|  | vmiccmsession | Provides a way to manage VMs with PowerShell without a network connection | Low |
+
+*Resources:* <br />
+https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-integration-services <br />
+https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/reference/integration-services
 ### 🔳 configure Discrete Device Assignment
 *Resources:*
 
@@ -645,8 +669,7 @@ az vm resize --resource-group lab -name client01 -size Standard_B2s
 az vm start --resource-group lab --name client01
 ```
 
-*Resources:*
-
+*Resources:* <br />
 https://docs.microsoft.com/en-us/azure/virtual-machines/resize-vm
 ### 🔳 configure continuous delivery for Azure Virtual Machines
 *Resources:*
@@ -741,11 +764,11 @@ https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it
 ### 🔳 implement site-to-site virtual private network (VPN)
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about
 ### 🔳 implement Azure Virtual WAN
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about
 ### 🔳 implement Azure AD Application Proxy
 *Resources:*
 
@@ -759,7 +782,7 @@ https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-gu
 ### 🔳 create sync groups
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-modify-sync-topology?WT.mc_id=modinfra-39512-orthomas
+https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-modify-sync-topology
 ### 🔳 create cloud endpoints
 *Resources:*
 
@@ -789,9 +812,9 @@ https://docs.microsoft.com/en-us/azure/storage/files/files-manage-namespaces?WT.
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10)
-### 🔳 configure file screens
-*Resources:*
-
+### 📚 configure file screens
+  
+*Resources:* <br />
 https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management
 ### 🔳 configure File Server Resource Manger (FSRM) quotas
 *Resources:*
