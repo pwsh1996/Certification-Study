@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[69] Needs to be Studied
-📚[02] Read the Docs
+🔳[67] Needs to be Studied
+📚[04] Read the Docs
 ⏹[21] Did at Work
 ✅[09] Studied and did Hands-On Testing
 
@@ -535,10 +535,9 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/de
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/plan/plan-for-deploying-devices-using-discrete-device-assignment
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/deploy/deploying-storage-devices-using-dda
-### 🔳 configure VM Resource Groups
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-minroot-2016
+### 📚 configure VM Resource Groups
+*Resources:* <br />
+[Hyper-V Host CPU Resource Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-minroot-2016)
 ### 🔳 configure VM CPU Groups
 *Resources:*
 
@@ -604,21 +603,19 @@ To see what the current scheduler is, there is an event log with the Event ID=2 
 [Managing Hyper-V hypervisor scheduler types | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types) <br />
 [About Hyper-V hypervisor scheduler type selection | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection)
 ### ⏹ manage VM Checkpoints
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v
+*Resources:* <br />
+[Choose between standard or production checkpoints in Hyper-V | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/choose-between-standard-or-production-checkpoints-in-hyper-v) <br />
+[Enable or disable checkpoints in Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v)
 ### ⏹ implement high availability for virtual machines
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743844(v=ws.11)
-### 🔳 manage VHD and VHDX files
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831446(v=ws.11)
+### 📚 manage VHD and VHDX files
+*Resources:* <br />
+[Hyper-V Virtual Hard Disk Format Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831446(v=ws.11)) <br />
+[Configure a Shared Virtual Hard Disk | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn282283(v=ws.11))
 ### ⏹ configure Hyper-V network adapter
 *Resources:*
 
