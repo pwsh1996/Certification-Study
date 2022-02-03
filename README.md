@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[67] Needs to be Studied
-📚[04] Read the Docs
+🔳[65] Needs to be Studied
+📚[06] Read the Docs
 ⏹[21] Did at Work
 ✅[09] Studied and did Hands-On Testing
 
@@ -138,14 +138,22 @@ Logs can be found at
 [What's New in Active Directory Domain Services INstallation and Removal | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/what-s-new-in-active-directory-domain-services-installation-and-removal) <br />
 [Install-ADDSForest | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/addsdeployment/install-addsforest?view=windowsserver2022-ps) <br />
 [Active Directory Domain Services Deep Dive | John Savill YouTube](https://www.youtube.com/watch?v=4qC7H-y7oKI)
-### 🔳 deploy and manage domain controllers in Azure
-*Resources:*
+### 📚 deploy and manage domain controllers in Azure
+> Note: The VMs that are DCs should have a seperate data disk for storing the database, logs, and sysvol folder for Active Directory. Do not store these items on the same disk as the operating system. By default data disks that are attached to a VM use write-through caching. However this form of caching can conflict with the requirements of AD DS. For this reason, set the *Host Cache Preference* setting on the data disk to *None*.
 
-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adds-extend-domain
-### 🔳 deploy Read-Only Domain Controllers (RODCs)
-*Resources:*
+Deploy at least two VMs as DCs and add them to an availability set.
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/rodc/install-a-windows-server-2012-active-directory-read-only-domain-controller--rodc---level-200-
+The DCs in Azure should be part of a seperate AD DS site. Make a site link from the Azure site, to your on-premises AD DS sites, and AD DS will automatically perform the most efficient database replication possible.
+
+It's not recommended to deploy FSMO roles on the DCs in Azure
+
+Azure VMs that are operating as DCs should be shutdown from inside the guest OS and not through the Azure portal.
+
+*Resources:* <br />
+[Deploy AD DS in an Azure virtual network | Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/adds-extend-domain)
+### 📚 deploy Read-Only Domain Controllers (RODCs)
+*Resources:* <br />
+[Install a Windows Server 2012 Active Directory Read-Only Domain Controller (RODC) (Level 200) | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/rodc/install-a-windows-server-2012-active-directory-read-only-domain-controller--rodc---level-200-)
 ### ✅ troubleshoot flexible single master operations (FSMO) roles
 **Multi-master model** A multi-master enabled database, like AD, provides the flexibility of allowing changes to occur at any DC in the enterprise. But it also introduces the possibility of conflicts that can potentially lead to problems once the data is replicated. For certain types of changes, Windows incorporates methods to prevent conflicting Active Directory updates from occurring.
 
