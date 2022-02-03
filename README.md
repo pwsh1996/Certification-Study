@@ -544,10 +544,29 @@ https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/ma
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-cpugroups
-### 🔳 configure hypervisor scheduling types
+### 📚 configure hypervisor scheduling types
+There are different virtual processor scheduling modes that determine how the hypervisor allocaates and manages work across guest virtual processors. You can select hypervisor scheduler types that are best suited for the guest VMs and configure the VMs to take advantage of the scheduling logic 
+
+> Simultaneous multithreading (SMT) - A technique utilized in modern processor designs that allow the processor's resources to be shared by seperate, independent execution threads. The individual technologies are Intel HyperThreading and AMD SMT
+
+Core Hyper-V concepts to understand
+- Hyper-V creates and manages **VM partitions**, across which compute resources are allowcated and shared, under control of the hypervisor. **Partitions** provide strong isolation boundaries between all guest VMs, and between guest VMs and the root partition.
+- The root partition is itself a VM partition, although it has unique properties and much greater privileges than guest VMs. The root partition provides the management services that control all guest VMs, provides virtual device support for guests, and manages all device I/O for guest VMs. Microsoft strongly recommends not runnig any application workloads in the root partition.
+- Each virtual processor (VP) of the root partition is mapped 1:1 to an underlying logical processor (LP). A host VP always runs on the same underlying LP - there is no migration of the root partition's VPs.
+- By default, the LPs on which host VPs run can also run guest VPs.
+- A guest VP may be scheduled by the hypervisor to run on any available logical processor. While the hypervisor scheduler takes care to consider temporal cache locality, NUMA topology, and many other factors when scheduling a guest VP, ultimately the VP could be scheduled on any host LP.
+
+**Hypervisor scheduler types**
+
+🕓 The **Classic Scheduler**
+
+🕗 The **Core Scheduler**
+
+🕥 The **Root Scheduler**
+
 *Resources:* <br />
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types <br />
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection
+[Managing Hyper-V hypervisor scheduler types | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types) <br />
+[About Hyper-V hypervisor scheduler type selection | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection)
 ### ⏹ manage VM Checkpoints
 *Resources:*
 
@@ -813,7 +832,7 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 ### 📚 configure file screens
   
 *Resources:* <br />
-https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management
+[File Screening Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management)
 ### 🔳 configure File Server Resource Manger (FSRM) quotas
 *Resources:*
 
