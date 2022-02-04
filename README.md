@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[53] Needs to be Studied
-📚[16] Read the Docs
+🔳[52] Needs to be Studied
+📚[17] Read the Docs
 ⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
@@ -298,37 +298,33 @@ Changes are synced every 2 minutes
 *Resources:* <br />
 [What is Azure AD Connect cloud sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud-sync)
 ### 🔳 integrate Azure AD, AD DS, and Azure AD DS
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad
+*Resources:* <br />
+[Integrate on-premises AD domains with Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad)
 ### ⏹ manage Azure AD DS
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance
+*Resources:* <br />
+[Tutorial: Create and configure an Azure Active Directory Domain Services managed domain | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance)
 ### ⏹ manage Azure AD Connect Health
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect
+*Resources:* <br />
+[What is Azure AD Connect? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect)
 ### 🔳 manage authentication in on-premises and hybrid enviroments
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn
+*Resources:* <br/>
+[Choose the right authentication method for your Azure Active Directory hybrid identity solution | Microosft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn)
 ### 📚 configure and manage AD DS passwords
 *Resources:* <br />
 [Password and account lockout policies on Azure Active Directory Domain Services managed domains | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy)
 ## Manage Windows Server by using  domain-based Group Policies
 ### ⏹ implement Group Policy in AD DS
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11)
+*Resources:* <br />
+[Group Policy Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11))
 ### 🔳 implement Group Policy Preferences in AD DS
-*Resources:*
+*Resources:* <br />
+[About Group Policy Preferences | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-preferences)
+### 📚 implement Group Policy in Azure AD DS
 
-https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-preferences
-### 🔳 implement Group Policy in Azure AD DS
-*Resources:*
+In a hybrid environment, group policies configured in an on-premises AD DS environment aren't syncronized to Azure AD DS. To define configuration settings for users or computers in Azure AD DS, edit one of the default GPOs or create a custom GPO.
 
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy
+*Resources:* <br />
+[Administer Group Policy in an Active Directory Domain Services manged domain | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/manage-group-policy)
 # <a name="2"></a>Manage Windows Servers and workloads in a hybrid environment
 ## Manage Windows Servers in a hybrid environment
 ### ⏹ deploy a Windows Admin Center gateway server
