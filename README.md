@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[60] Needs to be Studied
-📚[10] Read the Docs
+🔳[59] Needs to be Studied
+📚[11] Read the Docs
 ⏹[21] Did at Work
 ✅[10] Studied and did Hands-On Testing
 
@@ -254,10 +254,29 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733001(v=ws.10)
-### 🔳 implement group managed service accounts (gMSAs)
-*Resources:*
+### 📚 implement group managed service accounts (gMSAs)
 
-https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview
+There are two types of Managed Service Account, standalone Manged Service Account (sMSA) and group Managed Service Acount (gMSA)
+
+> Note: The schema in the domain you are using gMSAs must be at a Server 2012 functional level
+
+Microsoft Key Distribution Service (kdssvc.dll). There needs to be a master root key for Active Directory. To see if there is a key already, use
+```powershell
+Get-KdsRootKey
+```
+To make a new key
+```powershell
+Add-KdsRootKey -EffectiveImmediately
+```
+
+Failover clusters don't support gMSAs
+
+AES should always be used for MSAs
+
+> Note: The password change interval can only be set during creation. To change you must create a new gMSA.
+
+*Resources:* <br />
+[Group Managed Service Accounts Overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
 ### 🔳 join Windows Server to AD DS, Azure AD DS, and Azure AD
 *Resources:*
 
