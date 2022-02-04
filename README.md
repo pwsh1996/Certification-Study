@@ -346,7 +346,9 @@ https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/powershell-
 > The **Second Hop Problem** occurs when you remote into a server and enter a command on the server that attemps to access a resource on another server. The result would be that you are denied because the credentials you used to connect in the first place are not passed after that first connection.
 
 **CredSSP** - balances ease of use and security
+
 **Resource-based Kerberos constrained delegation** - higher security with simpler configuration
+
 **Kerberos constrained delegation** - high security but requires domain administrator
 
 *Resources:* <br />
