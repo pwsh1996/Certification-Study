@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[57] Needs to be Studied
-📚[13] Read the Docs
+🔳[56] Needs to be Studied
+📚[14] Read the Docs
 ⏹[21] Did at Work
 ✅[10] Studied and did Hands-On Testing
 
@@ -244,15 +244,18 @@ AD DS uses site information for many purposes, including routing replication, cl
 [Active Directory Replication Concepts | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
 ## Create and manage AD DS security principals
 ### ⏹ create and manage AD DS users and groups
-*Resources:*
+*Resources:* <br />
+[Managing Users | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754661(v=ws.10)) <br />
+[Managing Groups | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771069(v=ws.10))
+### 📚 manage users and groups in multi-domain and multi-forest scenarios
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc754661(v=ws.10)
+Types of group accounts
+- domain local groups - apply to the domain only and should be used for permission type groups
+- global groups - apply to the domain only, and should be used for role type groups
+- universal groups - apply to the forest, and should be used as big containers
 
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771069(v=ws.10)
-### 🔳 manage users and groups in multi-domain and multi-forest scenarios
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733001(v=ws.10)
+*Resources:* <br />
+[Understanding Group Accounts | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc733001(v=ws.10))
 ### 📚 implement group managed service accounts (gMSAs)
 
 There are two types of Managed Service Account, standalone Manged Service Account (sMSA) and group Managed Service Acount (gMSA)
