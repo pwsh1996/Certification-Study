@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[63] Needs to be Studied
-📚[07] Read the Docs
+🔳[61] Needs to be Studied
+📚[09] Read the Docs
 ⏹[21] Did at Work
 ✅[10] Studied and did Hands-On Testing
 
@@ -291,10 +291,9 @@ https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-c
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn
-### 🔳 configure and manage AD DS passwords
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy
+### 📚 configure and manage AD DS passwords
+*Resources:* <br />
+[Password and account lockout policies on Azure Active Directory Domain Services managed domains | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy)
 ## Manage Windows Server by using  domain-based Group Policies
 ### ⏹ implement Group Policy in AD DS
 *Resources:*
@@ -749,8 +748,8 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/windows/winrm
 ### 🔳 manage Azure Virtual Machines network configuration
 *Resources:*
 
-https://docs.microsoft.com/en-us/azure/virtual-network/network-overview
-# <a name="4">Implement and manage an on-premises and hybrid networking infrastructure
+[Virtual networks and virtual machines in Azure | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-network/network-overview)
+# <a name="4"></a>Implement and manage an on-premises and hybrid networking infrastructure
 ## Implement on-premises and hybrid name resolution
 ### 🔳 integrate DNS with AD DS
 *Resources:*
@@ -877,13 +876,11 @@ https://docs.microsoft.com/en-us/azure/storage/files/files-manage-namespaces?WT.
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10)
 ### 📚 configure file screens
-  
 *Resources:* <br />
 [File Screening Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management)
-### 🔳 configure File Server Resource Manger (FSRM) quotas
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/fsrm/quota-management
+### 📚 configure File Server Resource Manger (FSRM) quotas
+*Resources:* <br />
+[Quota Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/fsrm/quota-management)
 ### 🔳 configure BranchCache
 *Resources:*
 
