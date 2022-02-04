@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[64] Needs to be Studied
-📚[07] Read the Docs
+🔳[63] Needs to be Studied
+📚[08] Read the Docs
 ⏹[21] Did at Work
 ✅[09] Studied and did Hands-On Testing
 
@@ -409,12 +409,10 @@ Other Benifits
 *Resources:* <br />
 [Use local resources on Hyper-V virtual machine with VMConnect | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect) <br />
 [Hyper-V Virtual Machine Connection | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect)
-### 🔳 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct
-
-https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true
+### 📚 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
+*Resources:* <br />
+[Manage Windows virtual machines using PowerShell Direct | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct) <br />
+[Manage Hyper-V VMs using Powershell Direct | Microsoft ITOps Talk Blog](https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true)
 ### ✅ configure nested virtualization
 > Note: Nested Virtualization is supported in both Azure and on-premises. However, the nested virtual machines are not supported for production purposes. Labs, testing environments, demo environments, etc, are more of it's purpose.
 
