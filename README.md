@@ -6,9 +6,9 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[56] Needs to be Studied
-📚[14] Read the Docs
-⏹[20] Did at Work
+🔳[53] Needs to be Studied
+📚[16] Read the Docs
+⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
 # <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments
@@ -227,12 +227,10 @@ Move-ADDirectoryServerOperationMasterRole -Identity "dc02" -OperationMasterRole 
 [Transfer or seize FSMO roles in Active Directory Domain Services | Microsoft Docs](https://docs.microsoft.com/en-us/troubleshoot/windows-server/identity/transfer-or-seize-fsmo-roles-in-ad-ds) <br />
 [Move-ADDirectoryServerOperationMasterRole | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/activedirectory/move-addirectoryserveroperationmasterrole?view=windowsserver2022-ps)
 ## Configure and manage multi-site, multi-domain, and multi-forest environments
-### 🔳 configure and manage forest and domain trusts
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-forest-trust
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771568(v=ws.10)
+### 📚 configure and manage forest and domain trusts
+*Resources:* <br />
+[Tutorial: Create an outbound forest trust to an on-premises domain in Azure Active Directory Domain Services | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-forest-trust) <br />
+[Managin Trusts | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771568(v=ws.10))
 ### 📚 configure and manage AD DS sites
 
 AD DS uses site information for many purposes, including routing replication, client affinity, system volume (SYSVOL) replication, Distributed File System Namesspaces (DFSN), and service location.
@@ -279,25 +277,26 @@ AES should always be used for MSAs
 
 *Resources:* <br />
 [Group Managed Service Accounts Overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview)
-### 🔳 join Windows Server to AD DS, Azure AD DS, and Azure AD
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain
-
-https://docs.microsoft.com/en-us/azure/active-directory-domain-services/join-windows-vm
+### ⏹ join Windows Server to AD DS, Azure AD DS, and Azure AD
+*Resources:* <br />
+[Join a Computer to a Domain | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/deployment/join-a-computer-to-a-domain) <br />
+[Tutorial: Join a Windows Server virtual machine to an Azure Active Directory Domain Services managed domain | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/join-windows-vm)
 ## Impliment and manage hybrid identities
 ### ⏹ implement Azure AD Connect
-*Resources:*
 
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect-v2
+Changes are synced every 30 minutes
+
+*Resources:* <br />
+[Introduction to Azure AD Connect V2.0 | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect-v2)
 ### ⏹ manage Azure AD Connect Synchrinization
-*Resources:*
+*Resources:* <br />
+[Azure AD Connect sync: Understanding the architecture | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/concept-azure-ad-connect-sync-architecture)
+### 📚 implement Azure AD Connect cloud sync
 
-https://docs.microsoft.com/en-us/azure/active-directory/hybrid/concept-azure-ad-connect-sync-architecture
-### 🔳 implement Azure AD Connect cloud sync
-*Resources:*
+Changes are synced every 2 minutes
 
-https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud-sync
+*Resources:* <br />
+[What is Azure AD Connect cloud sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud-sync)
 ### 🔳 integrate Azure AD, AD DS, and Azure AD DS
 *Resources:*
 
