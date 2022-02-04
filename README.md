@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[58] Needs to be Studied
-📚[12] Read the Docs
+🔳[57] Needs to be Studied
+📚[13] Read the Docs
 ⏹[21] Did at Work
 ✅[10] Studied and did Hands-On Testing
 
@@ -239,10 +239,9 @@ AD DS uses site information for many purposes, including routing replication, cl
 
 *Resources:* <br />
 [Understanding Active Directory Site Topology | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology)
-### 🔳 configure and manage AD DS replication
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts
+### 📚 configure and manage AD DS replication
+*Resources:* <br />
+[Active Directory Replication Concepts | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/replication/active-directory-replication-concepts)
 ## Create and manage AD DS security principals
 ### ⏹ create and manage AD DS users and groups
 *Resources:*
