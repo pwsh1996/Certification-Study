@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[61] Needs to be Studied
-📚[09] Read the Docs
+🔳[60] Needs to be Studied
+📚[10] Read the Docs
 ⏹[21] Did at Work
 ✅[10] Studied and did Hands-On Testing
 
@@ -233,10 +233,12 @@ Move-ADDirectoryServerOperationMasterRole -Identity "dc02" -OperationMasterRole 
 https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-forest-trust
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc771568(v=ws.10)
-### 🔳 configure and manage AD DS sites
-*Resources:*
+### 📚 configure and manage AD DS sites
 
-https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology
+AD DS uses site information for many purposes, including routing replication, client affinity, system volume (SYSVOL) replication, Distributed File System Namesspaces (DFSN), and service location.
+
+*Resources:* <br />
+[Understanding Active Directory Site Topology | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-active-directory-site-topology)
 ### 🔳 configure and manage AD DS replication
 *Resources:*
 
