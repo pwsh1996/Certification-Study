@@ -8,8 +8,8 @@
 
 🔳[56] Needs to be Studied
 📚[14] Read the Docs
-⏹[21] Did at Work
-✅[10] Studied and did Hands-On Testing
+⏹[20] Did at Work
+✅[11] Studied and did Hands-On Testing
 
 # <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments
 ## Deploy and manage AD DS domain controllers
@@ -643,10 +643,17 @@ To see what the current scheduler is, there is an event log with the Event ID=2 
 *Resources:* <br />
 [Managing Hyper-V hypervisor scheduler types | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-hyper-v-scheduler-types) <br />
 [About Hyper-V hypervisor scheduler type selection | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/about-hyper-v-scheduler-type-selection)
-### ⏹ manage VM Checkpoints
+### ✅ manage VM Checkpoints
+
+There are two types of Hyper-V checkpoints
+- **Production Checkpoints** which are "point in time"
+- **Standard Checkpoints** which captures the state, data, and hardware configureation
+
+![image](https://user-images.githubusercontent.com/51274282/152468280-bff9e130-cc2f-49a1-ac1e-2b779f815cf5.png)
+
 *Resources:* <br />
 [Choose between standard or production checkpoints in Hyper-V | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/choose-between-standard-or-production-checkpoints-in-hyper-v) <br />
-[Enable or disable checkpoints in Hyper-V](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v)
+[Enable or disable checkpoints in Hyper-V | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v)
 ### ⏹ implement high availability for virtual machines
 *Resources:*
 
