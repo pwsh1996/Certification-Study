@@ -7,9 +7,9 @@
 | [Manage storage and file services](#5) | 15-20% |
 
 🔳[63] Needs to be Studied
-📚[08] Read the Docs
+📚[07] Read the Docs
 ⏹[21] Did at Work
-✅[09] Studied and did Hands-On Testing
+✅[10] Studied and did Hands-On Testing
 
 # <a name="1"></a>Deploy and Manage Active Directory Domain Services (AD DS) in on-premises and cloud environments
 ## Deploy and manage AD DS domain controllers
@@ -409,7 +409,20 @@ Other Benifits
 *Resources:* <br />
 [Use local resources on Hyper-V virtual machine with VMConnect | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/use-local-resources-on-hyper-v-virtual-machine-with-vmconnect) <br />
 [Hyper-V Virtual Machine Connection | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/learn-more/hyper-v-virtual-machine-connect)
-### 📚 manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
+### ✅ manage VM using PowerShell Remoting, PowerShell Direct, and HVC.exe
+
+Powershell Direct works on Windows 10 and Windows Server 2016 and above (OS requirment for the host and guest). PowerShell Direct allows Windows Powershell management inside a VM regardless of the network configuration or remote management settings on the host or guest VM.
+
+You can either use **PSSession** or **Invoke-Command** to use it, no configuration required.
+
+```powershell
+Enter-PSSession -VMName "Win01"
+```
+or
+```powershell
+Invoke-Command -VMName "Win01" -ScriptBlock {Get-Process}
+```
+
 *Resources:* <br />
 [Manage Windows virtual machines using PowerShell Direct | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/manage-windows-virtual-machines-with-powershell-direct) <br />
 [Manage Hyper-V VMs using Powershell Direct | Microsoft ITOps Talk Blog](https://techcommunity.microsoft.com/t5/itops-talk-blog/manage-hyper-v-vms-using-powershell-direct/bc-p/1531743/highlight/true)
