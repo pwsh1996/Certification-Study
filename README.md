@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[59] Needs to be Studied
-📚[11] Read the Docs
+🔳[58] Needs to be Studied
+📚[12] Read the Docs
 ⏹[21] Did at Work
 ✅[10] Studied and did Hands-On Testing
 
@@ -348,10 +348,13 @@ https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/powershell-
 *Resources:*
 
 https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ps-remoting-second-hop?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas
-### 🔳 configure JEA for Powershell Remoting
-*Resources:*
+### 📚 configure JEA for Powershell Remoting
 
-https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas
+JEA uses the principle of *Least Privilege*
+
+*Resources:* <br />
+[Just Enough Administration | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/jea/overview?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas) <br />
+[PowerShell ♥ the Blue Team | Microsoft Devblogs](https://devblogs.microsoft.com/powershell/powershell-the-blue-team/)
 ## Manage Windows Servers and workloads by using Azure services
 ### 🔳 manage Windows Servers by using Azure Arc
 *Resources:*
