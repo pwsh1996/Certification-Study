@@ -342,9 +342,16 @@ https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/running-rem
 
 https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/powershell-remoting-faq?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas
 ### 🔳 configure CredSSP or Kerberos delegation for second hop remoting
-*Resources:*
 
-https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ps-remoting-second-hop?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas
+> The **Second Hop Problem** occurs when you remote into a server and enter a command on the server that attemps to access a resource on another server. The result would be that you are denied because the credentials you used to connect in the first place are not passed after that first connection.
+
+**CredSSP** - balances ease of use and security
+**Resource-based Kerberos constrained delegation** - higher security with simpler configuration
+**Kerberos constrained delegation** - high security but requires domain administrator
+
+*Resources:* <br />
+[Making the second hop in PowerShell Remoting | Microsoft Docs](https://docs.microsoft.com/en-us/powershell/scripting/learn/remoting/ps-remoting-second-hop?view=powershell-7.2&viewFallbackFrom=powershell-7.1%3FWT.mc_id%3Dmodinfra-39512-orthomas) <br />
+[Enable PowerShell "Second-Hop" Functionality with CredSSP | Microsoft Devblogs](https://devblogs.microsoft.com/scripting/enable-powershell-second-hop-functionality-with-credssp/)
 ### 📚 configure JEA for Powershell Remoting
 
 JEA uses the principle of *Least Privilege*
