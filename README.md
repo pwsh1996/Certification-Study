@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[50] Needs to be Studied
-📚[19] Read the Docs
+🔳[49] Needs to be Studied
+📚[20] Read the Docs
 ⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
@@ -317,9 +317,28 @@ AAD DC Administrators is the group that's like Domain Admin
 [Password and account lockout policies on Azure Active Directory Domain Services managed domains | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/password-policy)
 ## Manage Windows Server by using  domain-based Group Policies
 ### ⏹ implement Group Policy in AD DS
+
+Order In which GPOs apply (LSDOU)<br />
+Local Computer -> Site -> Domain -> Organizational Unit <br />
+is the order that it's applied in so an OU GPO overrides an Site GPO
+
+Enforcing a GPO breaks through blocked inheritance and goes on top of the LSDOU
+
+Refresh, 5 mins for DCs and 90 mins for domain members
+
+```powershell
+Invoke-GPUpdate
+```
+
+> Note: GPOs are stored in SYSVOL and replicated via the PDC Emulator
+
+Administrative Templates, extending the capabilities Group Policy, ADMX files
+
+*Group Policy Creater Owners* group
+
 *Resources:* <br />
 [Group Policy Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831791(v=ws.11))
-### 🔳 implement Group Policy Preferences in AD DS
+### 📚 implement Group Policy Preferences in AD DS
 *Resources:* <br />
 [About Group Policy Preferences | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/policy/group-policy-preferences)
 ### 📚 implement Group Policy in Azure AD DS
