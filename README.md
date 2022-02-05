@@ -375,9 +375,12 @@ https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-assign-p
 
 https://docs.microsoft.com/en-us/azure/azure-arc/servers/learn/tutorial-enable-vm-insights
 ### 🔳 manage updates for Windows machines
-*Resources:*
 
-https://docs.microsoft.com/en-us/azure/automation/update-management/overview
+> Note: Automatic VM guest patching is only supported on Gen1 images
+
+*Resources:* <br />
+[Update Management overview | Microsoft Docs](https://docs.microsoft.com/en-us/azure/automation/update-management/overview)
+[Automatic VM guest patching for Azure VMs | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-machines/automatic-vm-guest-patching)
 ### 📚 integrate Windows Servers with Log Analytics
 The Azure Log Analytics agent collects telemetry from Windows and Linux virtual machines in any cloud, on-premises machines, and those monitored by System Center Operations Manager and sends collected data to you Log Analytics workspace in Azure Monitor.
 
