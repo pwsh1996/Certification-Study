@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[51] Needs to be Studied
-📚[18] Read the Docs
+🔳[50] Needs to be Studied
+📚[19] Read the Docs
 ⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
@@ -297,10 +297,13 @@ Changes are synced every 2 minutes
 
 *Resources:* <br />
 [What is Azure AD Connect cloud sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/cloud-sync/what-is-cloud-sync)
-### 🔳 integrate Azure AD, AD DS, and Azure AD DS
+### 📚 integrate Azure AD, AD DS, and Azure AD DS
 *Resources:* <br />
 [Integrate on-premises AD domains with Azure AD | Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/identity/azure-ad)
 ### ⏹ manage Azure AD DS
+
+AAD DC Administrators is the group that's like Domain Admin
+
 *Resources:* <br />
 [Tutorial: Create and configure an Azure Active Directory Domain Services managed domain | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance)
 ### ⏹ manage Azure AD Connect Health
