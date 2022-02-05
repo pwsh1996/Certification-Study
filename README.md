@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[52] Needs to be Studied
-📚[17] Read the Docs
+🔳[51] Needs to be Studied
+📚[18] Read the Docs
 ⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
@@ -331,10 +331,12 @@ In a hybrid environment, group policies configured in an on-premises AD DS envir
 *Resources:*
 
 https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/deploy-wac-in-azure
-### 🔳 configure a target machine for Windows Admin Center
-*Resources:*
+### 📚 configure a target machine for Windows Admin Center
 
-https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-vm
+Default Port 6516
+
+*Resources:* <br />
+[Use Windows Admin Center in the Azure portal to manage Windows Server VM | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/manage-vm)
 ### ⏹ configure PowerShell Remoting
 *Resources:*
 
