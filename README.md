@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[48] Needs to be Studied
-📚[21] Read the Docs
+🔳[47] Needs to be Studied
+📚[22] Read the Docs
 ⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
@@ -840,10 +840,9 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:*
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183630(v=ws.10)
-### 🔳 resolve IP address issues in hybrid enviroments
-*Resources:*
-
-https://support.microsoft.com/en-au/topic/fix-duplicate-ip-address-conflicts-on-a-dhcp-network-d68499da-69a3-da3b-4630-d17e502adf50
+### 📚 resolve IP address issues in hybrid enviroments
+*Resources:* <br />
+[Fix duplicate IP address conflicts on a DHCP network | Microsoft Support](https://support.microsoft.com/en-au/topic/fix-duplicate-ip-address-conflicts-on-a-dhcp-network-d68499da-69a3-da3b-4630-d17e502adf50)
 ### ⏹ create and manage scopes
 *Resources:*
 
