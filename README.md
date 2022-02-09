@@ -6,8 +6,8 @@
 | [Implement and manage an on-premises and hybrid networking infrastructure](#4) | 15-20% |
 | [Manage storage and file services](#5) | 15-20% |
 
-🔳[49] Needs to be Studied
-📚[20] Read the Docs
+🔳[48] Needs to be Studied
+📚[21] Read the Docs
 ⏹[21] Did at Work
 ✅[11] Studied and did Hands-On Testing
 
@@ -305,7 +305,8 @@ Changes are synced every 2 minutes
 AAD DC Administrators is the group that's like Domain Admin
 
 *Resources:* <br />
-[Tutorial: Create and configure an Azure Active Directory Domain Services managed domain | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance)
+[Tutorial: Create and configure an Azure Active Directory Domain Services managed domain | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory-domain-services/tutorial-create-instance) <br />
+[Lets Get One Thing Straight Azure AD Domain Services | Azure Academy YouTube (2020)](https://www.youtube.com/watch?v=OWGVoJMdIRc)
 ### ⏹ manage Azure AD Connect Health
 *Resources:* <br />
 [What is Azure AD Connect? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect)
@@ -860,64 +861,51 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd183698(v=ws.10)
 ### 🔳 implement DHCP high avalability
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn338978(v=ws.11)
+*Resources:* <br/>
+[Understand and Deploy DHCP Failover | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn338978(v=ws.11))
 ## Implement on-premises and hybrid network connectivity
 ### 🔳 implement and manage Remote Access role
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn636119(v=ws.11)
+*Resources:* <br />
+[Remote Access Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn636119(v=ws.11))
 ### 🔳 implement and manage Azure Network Adapter
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter
+*Resources:* <br />
+[Connect standalone servers by using Azure Network Adapter | Microsoft Docs](https://docs.microsoft.com/en-us/azure/architecture/hybrid/azure-network-adapter)
 ### 🔳 implement and manage Azure Extended Network
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network
+*Resources:* <br />
+[Extend your on-premises subnets into Azure using extended network for Azure | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-extended-network)
 ### 🔳 implement and manage Network Policy Server role
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831683(v=ws.11)
+*Resources:* <br />
+[Network Policy and Access Services Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831683(v=ws.11))
 ### 🔳 implement Web Application Proxy
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn584107(v=ws.11)
+*Resources:* <br />
+[Web Application Proxy | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn584107(v=ws.11))
 ### 🔳 implement Azure Relay
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it
+*Resources:* <br />
+[What is Azure Relay? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/azure-relay/relay-what-is-it)
 ### 🔳 implement site-to-site virtual private network (VPN)
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about
+*Resources:* <br />
+[About Point-to-Site VPN | Microsoft Docs](https://docs.microsoft.com/en-us/azure/vpn-gateway/point-to-site-about)
 ### 🔳 implement Azure Virtual WAN
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about
+*Resources:* <br />
+[What is Azure Virtual WAN? | Microsoft Docs](https://docs.microsoft.com/en-us/azure/virtual-wan/virtual-wan-about)
 ### 🔳 implement Azure AD Application Proxy
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy
+*Resources:* <br />
+[Using Azure AD Application Proxy to publish on-premises apps for remote users | Microsoft Docs](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy)
 # <a name="5"></a>Manage storage and file services
 ## Configure and manage Azure File Sync
 ### 🔳 create Azure File Sync service
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal%2Cproactive-portal
+*Resources:* <br />
+[Deploy Azure File Sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-deployment-guide?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal%2Cproactive-portal) <br />
+[How To Setup Azure File Sync From Nothing in 20 Minutes Flat | URTechDotCa YouTube (2019)](https://www.youtube.com/watch?v=feWI_G-xB8w)
 ### 🔳 create sync groups
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-modify-sync-topology
+*Resources:* <br />
+[Modify your Azure File Sync topology | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-modify-sync-topology)
 ### 🔳 create cloud endpoints
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal
+*Resources:* <br />
+[Create an Azure file share | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/storage-how-to-create-file-share?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal)
 ### 🔳 register servers
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration
+*Resources:* <br />
+[Manage registered servers with Azure File Sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-registration)
 ### 🔳 create server endpoints
 *Resources:*
 
@@ -926,19 +914,16 @@ https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-server-endpoi
 *Resources:*
 
 https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-how-to-manage-tiered-files
-### 🔳 monitor File Sync
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring
+### 📚 monitor File Sync
+*Resources:* <br />
+[Monitor Azure File Sync | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/file-sync/file-sync-monitoring)
 ### 🔳 migrate DFS to Azure File Sync
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure/storage/files/files-manage-namespaces?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal
+*Resources:* <br />
+[How to use DFS Namespaces with Azure Files | Microsoft Docs](https://docs.microsoft.com/en-us/azure/storage/files/files-manage-namespaces?WT.mc_id=modinfra-39512-orthomas&tabs=azure-portal)
 ## Configure and manage Windows Server file shares
 ### ⏹ configure Windows Server file share access
-*Resources:*
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10)
+*Resources:* <br />
+[Share permissions | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2003/cc784499(v=ws.10))
 ### 📚 configure file screens
 *Resources:* <br />
 [File Screening Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/fsrm/file-screening-management)
@@ -946,9 +931,8 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server
 *Resources:* <br />
 [Quota Management | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/fsrm/quota-management)
 ### 🔳 configure BranchCache
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/networking/branchcache/branchcache
+*Resources:* <br />
+[BranchCahe | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/networking/branchcache/branchcache)
 ### ⏹ impliment and configure Distributed File System (DFS)
 *Resources:*
 
@@ -957,34 +941,25 @@ https://docs.microsoft.com/en-us/windows-server/storage/dfs-namespaces/dfs-overv
 https://docs.microsoft.com/en-us/windows-server/storage/dfs-replication/dfsr-overview
 ## Configure Windows Server storage
 ### ⏹ configure disks and volumes
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-disks
-
-https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-basic-volumes
+*Resources:* <br />
+[Manage disks | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-disks) <br />
+[Manage basic volumes | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/disk-management/manage-basic-volumes)
 ### 🔳 configure and manage Storage Spaces
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/overview
+*Resources:* <br />
+[Storage Spaces overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/storage-spaces/overview)
 ### 🔳 configure and manage Storage Replica
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview
+*Resources:* <br />
+[Storage Replica overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/storage-replica/storage-replica-overview)
 ### ⏹ configure Data Deduplication
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/data-deduplication/overview
+*Resources:* <br />
+[Data Deduplication Overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/data-deduplication/overview)
 ### 🔳 configure SMB direct
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/file-server/smb-direct
+*Resources:* <br />
+[SMB Direct | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/file-server/smb-direct)
 ### 🔳 configure Storage Quality of Service (QoS)
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/storage-qos/storage-qos-overview
+*Resources:* <br />
+[Storage Quality of Service | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/storage-qos/storage-qos-overview)
 ### ⏹ configure file systems
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/storage/refs/refs-overview
-
-https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview
+*Resources:* <br />
+[Resilient File System (ReFS) overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/refs/refs-overview) <br />
+[NTFS overview | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/storage/file-server/ntfs-overview)
