@@ -686,46 +686,38 @@ There are two types of Hyper-V checkpoints
 *Resources:* <br />
 [Choose between standard or production checkpoints in Hyper-V | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/choose-between-standard-or-production-checkpoints-in-hyper-v) <br />
 [Enable or disable checkpoints in Hyper-V | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/enable-or-disable-checkpoints-in-hyper-v)
+[Removing the Mystery of Hyper-V Checkpoints | TechsavvyProductions YouTube (2021)](https://www.youtube.com/watch?v=IeIz02njY70)
 ### ⏹ implement high availability for virtual machines
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica
-
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743844(v=ws.11)
+*Resources:* <br />
+[Set up Hyper-V Replica | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica) <br />
+[Clustering for Hyper-V | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn743844(v=ws.11))
 ### 📚 manage VHD and VHDX files
 *Resources:* <br />
 [Hyper-V Virtual Hard Disk Format Overview | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831446(v=ws.11)) <br />
 [Configure a Shared Virtual Hard Disk | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn282283(v=ws.11))
 ### ⏹ configure Hyper-V network adapter
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
+*Resources:* <br />
+[Host network requirements for Azure Stack HCI | Microsoft Docs](https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements)
 ### ⏹ configure NIC teaming
-*Resources:*
-
-https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements
-
-https://docs.microsoft.com/en-us/windows-server/networking/technologies/nic-teaming/nic-teaming
+*Resources:* <br />
+[Host network requirements for Azure Stack HCI | Microsoft Docs](https://docs.microsoft.com/en-us/azure-stack/hci/concepts/host-network-requirements) <br />
+[NIC Teaming | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/networking/technologies/nic-teaming/nic-teaming)
 ### ⏹ configure Hyper-V switch
-*Resources:*
-
-https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/hyper-v-virtual-switch
+*Resources:* <br />
+[Hyper-V Virtual Switch | Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/virtualization/hyper-v-virtual-switch/hyper-v-virtual-switch)
 ## Create and manage containers
 ### 🔳 create Windows Server container images
 *Resources:* <br />
 [Container Base Images | Microsoft Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images)
 ### 🔳 manage Windows Server container images
-*Resources:*
-
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images
+*Resources:* <br />
+[Container Base Images | Microsoft Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/container-base-images)
 ### 🔳 configure Container networking
-*Resources:*
-
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture
+*Resources:* <br />
+[Windows container networking | Microsoft Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/container-networking/architecture)
 ### 🔳 manage container instances
-*Resources:*
-
-https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wac-containers
+*Resources:* <br />
+[Run new containers using Windows Admin Center | Microosft Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/wac-tooling/wac-containers)
 ## Manage Azure Virtual Machines that run Windows Server
 ### ✅ manage data disks
 ![image](https://user-images.githubusercontent.com/51274282/152251828-b19c6a72-a70d-45f2-9fbb-0f0c4ba852c0.png)
