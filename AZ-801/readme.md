@@ -58,18 +58,18 @@
 
 ## Implement a Windows Server failover cluster
 
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
-### 🔳
+### 🔳 Implement  failover cluster on-premises, hybrid, or cloud-only
+### 🔳 Create a Windows failover cluster
+### 🔳 Stretch cluster across datacenter or Azure regions
+### 🔳 Configure storage for failover clustering
+### 🔳 Modify quorum options
+### 🔳 Configure network adapters for failover clustering
+### 🔳 Configure cluster workload options
+### 🔳 Configure cluster sets
+### 🔳 Configure Scale-Out File servers
+### 🔳 Create an Azure witness
+### 🔳 Configure a floating IP address for the cluster
+### 🔳 Implement load balancing for the failover cluster
 
 ## Manage failover clustering
 
