@@ -16,16 +16,22 @@
 ## Secure Windows Server operating system
 
 ### 🔳 Configure and manage Exploit Protection
+*Resources:* <br />
+[Enable exploit protection | Microsoft Docs](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-exploit-protection?view=o365-worldwide)
 ### 🔳 Configure and manage Windows Defender Application Control
 ### 🔳 Configure and manage Microsoft Defender for Servers
 ### 🔳 Configure and manage Windows Defender Credential Guard
 ### 🔳 Configure SmartScreen
+*Resources:* <br />
+[Microsoft Defender SmartScreen | Microsoft Docs](https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/)
 ### 🔳 Implement operating system security by using Group Policies
 
 ## Secure a hybrid Active Directory infrastructure
 
 ### 🔳 Configure password policies
 ### 🔳 Enable password block lists
+*Resources:* <br />
+[Turorial: Configure custom banned passwords for Microsoft Entra password protection | Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-configure-custom-password-protection)
 ### 🔳 Manage protected users
 ### 🔳 Manage account security on an RODC
 ### 🔳 Harden domain controllers
@@ -63,6 +69,8 @@
 ### 🔳 Stretch cluster across datacenters or Azure regions
 ### 🔳 Configure storage for failover clustering
 ### 🔳 Modify quorum options
+*Resources:* <br />
+[Configure and manage quorum | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum)
 ### 🔳 Configure network adapters for failover clustering
 ### 🔳 Configure cluster workload options
 ### 🔳 Configure cluster sets
