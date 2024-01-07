@@ -19,6 +19,8 @@
 *Resources:* <br />
 [Enable exploit protection | Microsoft Docs](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/enable-exploit-protection?view=o365-worldwide)
 ### 🔳 Configure and manage Windows Defender Application Control
+*Resources:* <br />
+[Windows Defender Application Control management with Configuration Manager | Mircosoft Docs](https://learn.microsoft.com/en-us/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
 ### 🔳 Configure and manage Microsoft Defender for Servers
 ### 🔳 Configure and manage Windows Defender Credential Guard
 ### 🔳 Configure SmartScreen
@@ -166,35 +168,79 @@
 
 ### 🔳 Monitor Windows Server using Performance Monitor
 ### 🔳 Create and configure Data Collector Sets
+*Resources:* <br />
+[Creating Data Collector Sets | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc749337(v=ws.11))
 ### 🔳 Monitor servers and configure alerts by using Windows Admin Center
 ### 🔳 Analyze Windows Server system data by using System Insights
 ### 🔳 Manage event logs
+*Resources:* <br />
+[Event Logs | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc722404(v=ws.11)) <br />
+[Manage and monitor Windows Server event logs | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/manage-monitor-event-logs/)
 ### 🔳 Deploy Azure Monitor agents
 ### 🔳 Collect performance counters to Azure
 ### 🔳 Create alerts
+*Resources:* <br />
+[Create or edit a log alert rule | Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule)
 ### 🔳 Monitor Azure VMs by using Azure diagnostics extension
+*Resources:* <br />
+[Azure Diagnostics extension overview | Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/diagnostics-extension-overview)
 ### 🔳 Monitor Azure VMs performance by using VM Insights
+*Resources:* <br />
+[Overview of VM insights | Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-monitor/vm/vminsights-overview)
 
-## Troubleshoot Windows Server on-premises and hybrid networking
+## Troubleshoot Windows Server on-premises and hybrid networking <sup><sup>[Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-premises-hybrid-networking/)</sup></sup>
 
 ### 🔳 Troubleshoot hybrid network connectivity
+*Resources:* <br />
+[Microsoft Azure Virtual Network Troubleshooter package | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/azure/general/sdp3fdcb6045-5616-45b4-bb68-0bd11081c184-vnet)
 ### 🔳 Troubleshoot on-premises connectivity
+*Resources:* <br />
+[Windows Server networking troubleshooting documentation | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/networking/networking-overview)
 
 ## Troubleshoot Windows Server virtual machines in Azure
 
 ### 🔳 Troubleshoot deployment failures
+*Resources:* <br />
+[VM deployment issues | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/welcome-deployment-troubleshooting) <br />
+[Troubleshoot VM deployment | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-windows-server-virtual-machines-azure/2-troubleshoot-vm-deployment)
 ### 🔳 Troubleshoot booting failures
+*Resources:* <br />
+[Troubleshoot Azure Virtual Machines boot errors | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/azure/virtual-machines/boot-error-troubleshoot) <br />
+[Troubleshoot VM startup | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-windows-server-virtual-machines-azure/3-troubleshoot-vm-startup)
 ### 🔳 Troubleshoot VM performance issues
+*Resources:* <br />
+[Troubleshoot VM performance | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-windows-server-virtual-machines-azure/6-troubleshoot-vm-performance/)
 ### 🔳 Troubleshoot VM extension issues
+*Resources:* <br />
+[Troubleshoot VM extensions | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-windows-server-virtual-machines-azure/4-troubleshoot-vm-extensions/)
 ### 🔳 Troubleshoot disk encryption issues
+*Resources:* <br />
+[Azure Disk Encryption for Windows VMs | Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-overview)
 ### 🔳 Troubleshoot storage
+*Resources:* <br />
+[Troubleshoot VM Storage | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-windows-server-virtual-machines-azure/7-troubleshoot-vm-storage/ )
 ### 🔳 Troubleshoot VM connection issues
+*Resources:* <br />
+[Troubleshoot VM conectivity | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-windows-server-virtual-machines-azure/5-troubleshoot-remote-vm-connections/)
 
 ## Troubleshoot Active Directory
 
 ### 🔳 Restore objects from AD recycle bin
+*Resources:* <br />
+[What's New in AD DS: Active Directory Recycle Bin | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd391916(v=ws.10)) <br />
+[Recover objects from the AD recycle bin | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-active-directory/2-recover-objects-from-active-directory-recycle-bin/)
 ### 🔳 Recover Active Directory database using Directory Services Restore mode
+*Resources:* <br />
+[Recover the AD DS database | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-active-directory/3-recover-active-directory-domain-services-database/)
 ### 🔳 Recover SYSVOL
+*Resources:* <br />
+[Restoring and Rebuilding SYSVOL | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc816596(v=ws.10))
 ### 🔳 Troubleshoot Active Directory replication
+*Resources:* <br />
+[Troubleshoot AD DS replication | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-active-directory/5-troubleshoot-active-directory-domain-services-replication/)
 ### 🔳 Troubleshoot Hybrid authentication issues
+*Resources:* <br />
+[Troubleshoot hybrid authentication issues | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/troubleshoot-active-directory/6-troubleshoot-hybrid-authentication-issues/)
 ### 🔳 Troubleshoot on-premises Active Directory
+*Resources:* <br />
+[Troubleshoot domain controller deployment | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/identity/troubleshoot-domain-controller-deployment)
