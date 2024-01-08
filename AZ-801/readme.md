@@ -23,10 +23,14 @@
 [Windows Defender Application Control management with Configuration Manager | Mircosoft Docs](https://learn.microsoft.com/en-us/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
 ### 🔳 Configure and manage Microsoft Defender for Servers
 ### 🔳 Configure and manage Windows Defender Credential Guard
+*Resources:* <br />
+[Configure Credential Guard | Microsoft Docs](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/configure)
 ### 🔳 Configure SmartScreen
 *Resources:* <br />
 [Microsoft Defender SmartScreen | Microsoft Docs](https://learn.microsoft.com/en-us/windows/security/operating-system-security/virus-and-threat-protection/microsoft-defender-smartscreen/)
 ### 🔳 Implement operating system security by using Group Policies
+*Resources:* <br />
+[Security baselines | Microsoft Docs](https://learn.microsoft.com/en-us/windows/security/operating-system-security/device-management/windows-security-configuration-framework/windows-security-baselines)
 
 ## Secure a hybrid Active Directory infrastructure
 
@@ -167,17 +171,27 @@
 ## Monitor Windows Server by using Windows Server tools and Azure services
 
 ### 🔳 Monitor Windows Server using Performance Monitor
+*Resources:* <br />
+[Windows Server performanace troubleshooting documentation | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/performance-overview)
 ### 🔳 Create and configure Data Collector Sets
 *Resources:* <br />
 [Creating Data Collector Sets | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc749337(v=ws.11))
 ### 🔳 Monitor servers and configure alerts by using Windows Admin Center
+*Resources:* <br />
+[Monitor servers and configure alerts with Azure Monitor from Windows Admin Center | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/azure/azure-monitor)
 ### 🔳 Analyze Windows Server system data by using System Insights
+*Resources:* <br />
+[System Insights overview | Microsft Docs](https://learn.microsoft.com/en-us/windows-server/manage/system-insights/overview)
 ### 🔳 Manage event logs
 *Resources:* <br />
 [Event Logs | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc722404(v=ws.11)) <br />
 [Manage and monitor Windows Server event logs | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/manage-monitor-event-logs/)
 ### 🔳 Deploy Azure Monitor agents
+*Resources:* <br />
+[Azure Monitor Agent overview | Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-monitor/agents/agents-overview)
 ### 🔳 Collect performance counters to Azure
+*Resources:* <br />
+[Data collection rules in Azure Monitor | Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-monitor/essentials/data-collection-rule-overview)
 ### 🔳 Create alerts
 *Resources:* <br />
 [Create or edit a log alert rule | Microsoft Docs](https://learn.microsoft.com/en-us/azure/azure-monitor/alerts/alerts-create-log-alert-rule)
