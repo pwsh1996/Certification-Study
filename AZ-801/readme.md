@@ -22,6 +22,8 @@
 *Resources:* <br />
 [Windows Defender Application Control management with Configuration Manager | Mircosoft Docs](https://learn.microsoft.com/en-us/mem/configmgr/protect/deploy-use/use-device-guard-with-configuration-manager)
 ### 🔳 Configure and manage Microsoft Defender for Servers
+*Resources:* <br />
+[Plaan your Defender for Servers deployment | Microsoft Docs](https://learn.microsoft.com/en-us/azure/defender-for-cloud/plan-defender-for-servers)
 ### 🔳 Configure and manage Windows Defender Credential Guard
 *Resources:* <br />
 [Configure Credential Guard | Microsoft Docs](https://learn.microsoft.com/en-us/windows/security/identity-protection/credential-guard/configure)
@@ -35,10 +37,14 @@
 ## Secure a hybrid Active Directory infrastructure
 
 ### 🔳 Configure password policies
+*Resources:* <br />
+[Best Practices for Securing Active Directory | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory)
 ### 🔳 Enable password block lists
 *Resources:* <br />
 [Turorial: Configure custom banned passwords for Microsoft Entra password protection | Microsoft Docs](https://learn.microsoft.com/en-us/entra/identity/authentication/tutorial-configure-custom-password-protection)
 ### 🔳 Manage protected users
+*Resources:* <br />
+[Appendix C: Protected Accounts and Groups in Active Directory | Microsft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-c--protected-accounts-and-groups-in-active-directory)
 ### 🔳 Manage account security on an RODC
 ### 🔳 Harden domain controllers
 ### 🔳 Configure authentication policy silos
