@@ -46,31 +46,64 @@
 *Resources:* <br />
 [Appendix C: Protected Accounts and Groups in Active Directory | Microsft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-c--protected-accounts-and-groups-in-active-directory)
 ### 🔳 Manage account security on an RODC
+*Resources:* <br />
+[Read-Only Domain Controllers Step-by-Step Guide | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc772234(v=ws.10))
 ### 🔳 Harden domain controllers
+*Resources:* <br />
+[Securing Domain Controllers Against Attack | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/securing-domain-controllers-against-attack)
 ### 🔳 Configure authentication policy silos
+*Resources:* <br />
+[Guidance about how to configure protected accounts | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/how-to-configure-protected-accounts)
 ### 🔳 Restrisct access to domain controllers
+*Resources:* <br />
+[Appendix H: Securing Local Administrator Accounts and Groups | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-h--securing-local-administrator-accounts-and-groups)
 ### 🔳 Configure account security
 ### 🔳 Manage AD built-in administrative groups
+*Resources:* <br />
+[Appendix B: Privileged Accounts and Groups in Active Directory | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/appendix-b--privileged-accounts-and-groups-in-active-directory)
 ### 🔳 Manage AD delegation
+*Resources:* <br />
+[Kerberos Constrained Delegation Overview | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj553400(v=ws.11)) <br />
+[Enable computer and user to be trusted for delegation | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn221977(v=ws.11))
 ### 🔳 Implement and manage Microsoft Defender for Identity
+*Resources:* <br />
+[What is Microsoft Defender for Identity? | Microsoft Docs](https://learn.microsoft.com/en-us/defender-for-identity/what-is)
 
 ## Identify and remediate Windows Server security issues by using Azure Services
 
 ### 🔳 Monitor on-premises servers and Azure IaaS VMs by using Microsoft Sentinel
+*Resources:* <br />
+[Find your Microsoft Sentinel data connector | Microsoft Docs](https://learn.microsoft.com/en-us/azure/sentinel/data-connectors-reference)
 ### 🔳 Identify and remediate security issues on-premises servers and Azure IaaS VMs by using Microsoft Defender for Cloud
+*Resources:* <br />
+[What is Microsoft Defender for Cloud? | Microsoft Docs](https://learn.microsoft.com/en-us/azure/defender-for-cloud/defender-for-cloud-introduction)
 
 ## Secure Windows Server networking
 
 ### 🔳 Manage Windows Defender Firewall
+*Resources:* <br />
+[Configure rules with group policy | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/best-practices-configuring)
 ### 🔳 Implement domain isolation
+*Resources:* <br />
+[Restrict Server Access to Members of a Group Only | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717267(v=ws.11))
 ### 🔳 Implement connection security rules
+*Resources:* <br />
+[Create an Authentication Request Rule | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj717283(v=ws.11))
 
 ## Secure Windows Server storage
 
 ### 🔳 Manage Windows Bitlocker Drive Encryption (BitLocker)
+*Resources:* <br />
+[BitLocker Frequently Asked Questions (FAQ) | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831507(v=ws.11))
 ### 🔳 Manage and recover encrypted volumes
+*Resources:* <br />
+[BitLocker Recovery Guide | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn383583(v=ws.11))
 ### 🔳 Enable storage encryption by using Azure Disk Encryption
+*Resources:* <br />
+[Data encryption models | Microsoft Docs](https://learn.microsoft.com/en-us/azure/security/fundamentals/encryption-models)
 ### 🔳 Manage disk encryption keys for IaaS virtual machines
+*Resources:* <br />
+[Overview of managed disk encryption options | Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview)
 
 # <a name="2"></a>Implement and Manage Windows Server high availability
 
@@ -169,8 +202,16 @@
 ## Migrate an AD DS infrastructure to Windows Server 2022 AD DS
 
 ### 🔳 Migrate AD DS objects, including users, groups and Group Policies using AD Migration Tool
+*Resources:* <br />
+[Best Practices for Active Directory Migration | Microsoft Docs](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc974412(v=ws.10)) <br />
+[Explore the Active Directory Migration Tool | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/active-directory-domain-services-migration/5-explore-active-directory-migration-tool/)
 ### 🔳 Migrate to a new Active Directory forest
+*Resources:* <br />
+[Interforest Active Directory Domain Restructure | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/cc974335(v=ws.10)) <br />
+[Active Directory Domain Services migration | Microsoft Learn](https://learn.microsoft.com/en-us/training/modules/active-directory-domain-services-migration/)
 ### 🔳 Upgrade an existing forest
+*Resources:* <br />
+[Upgrade domain controllers to a newer version of Windows Server | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/upgrade-domain-controllers)
 
 # <a name="5"></a>Monitor and troubleshoot Windows Server environments
 
