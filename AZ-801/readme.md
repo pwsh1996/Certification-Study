@@ -110,6 +110,9 @@
 ## Implement a Windows Server failover cluster
 
 ### 🔳 Implement a failover cluster on-premises, hybrid, or cloud-only
+*Resources:* <br />
+[Share an Azure managed disk | Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/disks-shared) <br />
+[Create and deploy virtual machines in an availability set using Azure Powershell | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/azure/virtual-machines/windows/tutorial-availability-sets)
 ### 🔳 Create a Windows failover cluster
 *Resources:* <br />
 [Create a failover cluster | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/create-failover-cluster)
@@ -118,6 +121,9 @@
 [Stretch Cluster Replication Using Shared Storage | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/stretch-cluster-replication-using-shared-storage) <br />
 [Cluster to Cluster Storage Replication Cross-Region in Azure | MIcrosoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/cluster-to-cluster-azure-cross-region)
 ### 🔳 Configure storage for failover clustering
+*Resources:* <br />
+[Failover clustering hardware requirements and storage options | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/clustering-requirements) <br />
+[Failover Clustering Hardware Requirements and Storage Options | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj612869(v=ws.11))
 ### 🔳 Modify quorum options
 *Resources:* <br />
 [Configure and manage quorum | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum)
