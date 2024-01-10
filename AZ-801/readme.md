@@ -142,8 +142,14 @@
 ## Implement and manage Storage Spaces Direct
 
 ### 🔳 Create a failover cluster using Storage Spaces Direct
+*Resources:* <br />
+[Storage Spaces Direct overview | Microsoft Docs](https://learn.microsoft.com/en-us/azure-stack/hci/concepts/storage-spaces-direct-overview)
 ### 🔳 Upgrade a Storage Spaces Direct node
+*Resources:* <br />
+[Upgrade a Storage Spaces Direct cluster to Windows Server 2019 | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/upgrade-storage-spaces-direct-to-windows-server-2019)
 ### 🔳 Implement networing for Storage Spaces Direct
+*Resources:* <br />
+[Deploy Storage Spaces Direct on Windows Server | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-storage-spaces-direct#step-2-configure-the-network)
 ### 🔳 Configure Storage Spaces Direct
 
 # <a name="3"></a>Implement disaster recovery
@@ -151,23 +157,53 @@
 ## Manage backup and recovery for Windows Server
 
 ### 🔳 Back up and restore files and folders to Azure Recovery Services Vault
+*Resources:* <br />
+[Back up Windows Server files and folders to Azure | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-windows-with-mars-agent) <br />
+[Restore files to Windows Server using the MARS Agent | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-restore-windows-server)
 ### 🔳 Install and manage Azure Backup Server
+*Resources:* <br />
+[What's new in Microsoft Azure Backup Server (MABS)? | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-mabs-whats-new-mabs) <br />
+[Install and upgrade Azure Backup Server | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-microsoft-azure-backup)
 ### 🔳 Back up and recover using Azure Backup Server
+*Resources:* <br />
+[Back up Azure VMs in a Recovery Services vault | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-vms-prepare)
 ### 🔳 Manage backups in Azure Recovery Services Vault
+*Resources:* <br />
+[Get improved backup and restore performance with Azure Backup Instant Restore capability | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-instant-restore-capability)
 ### 🔳 Create a backup policy
+*Resources:* <br />
+[Create Azure Recovery Services backup policies using REST API | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-userestapi-createorupdatepolicy)
 ### 🔳 Configure backup for Azure VM using the built-in backup agent
+*Resources:* <br />
+[Deploy and manage backup to Azure for Windows Server/Windows Client using PowerShell | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-client-automation)
 ### 🔳 Recover VM using temporary snapshots
+*Resources:* <br />
+[Backup and disaster recovery for Azure managed disks | Microsoft Docs](https://learn.microsoft.com/en-us/azure/virtual-machines/backup-and-disaster-recovery-for-azure-iaas-disks)
 ### 🔳 Recover VMs to new Azure VMs
+*Resources:* <br />
+[How to restore Azure VM data in Azure portal | Microsoft Docs](https://learn.microsoft.com/en-us/azure/backup/backup-azure-arm-restore-vms)
 ### 🔳 Restore a VM
 
 ## Implement disaster recovery by using Azure Site Recovery
 
 ### 🔳 Configure Azure Site Recovery networking
+*Resources:* <br />
+[Manage VM network interfaces for on-premises disaster recovery to Azure | Microsoft Docs](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-manage-network-interfaces-on-premises-to-azure)
 ### 🔳 Configure Site Recovery for on-premises VMs
+*Resources:* <br />
+[Prepare network mapping for Hyper-V VM disaster recovery to Azure | Microsoft Docs](https://learn.microsoft.com/en-us/azure/site-recovery/hyper-v-vmm-network-mapping)
 ### 🔳 Configure a recovery plan
+*Resources:* <br />
+[Create and customize recovery plans | Microsoft Docs](https://learn.microsoft.com/en-us/azure/site-recovery/site-recovery-create-recovery-plans)
 ### 🔳 Configure Site Recovery for Azure VMs
+*Resources:* <br />
+[About networking in Azure VM disaster recovery | Microsoft Docs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-about-networking)
 ### 🔳 Implement VM replication to secondary datacenter or Azure region
+*Resources:* <br />
+[Enable Azure VM disaster recovery between availability zones | Microsoft Docs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-zone-to-zone-disaster-recovery)
 ### 🔳 Configure Azure Site Recovery policies
+*Resources:* <br />
+[Use Azure Policy to set up Azure Site Recovery | Microsoft Docs](https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-how-to-enable-policy)
 
 ## Protect virtual machines by using Hyper-V replicas
 
