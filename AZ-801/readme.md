@@ -111,15 +111,26 @@
 
 ### 🔳 Implement a failover cluster on-premises, hybrid, or cloud-only
 ### 🔳 Create a Windows failover cluster
+*Resources:* <br />
+[Create a failover cluster | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/create-failover-cluster)
 ### 🔳 Stretch cluster across datacenters or Azure regions
 ### 🔳 Configure storage for failover clustering
 ### 🔳 Modify quorum options
 *Resources:* <br />
 [Configure and manage quorum | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/manage-cluster-quorum)
 ### 🔳 Configure network adapters for failover clustering
+*Resources:* <br />
+[Network Interface on a Clustered Node | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd354058(v=ws.10))
 ### 🔳 Configure cluster workload options
+*Resources:* <br />
+[Failover Clustering in Windows Server and Azure Stack HCI | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/failover-clustering-overview) <br />
+[Clustered Services and Applications | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd337817(v=ws.10))
 ### 🔳 Configure cluster sets
+*Resources:* <br />
+[Deploy a cluster set | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-set)
 ### 🔳 Configure Scale-Out File servers
+*Resouces:* <br />
+[Scale-Out File Server for application data overview | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/sofs-overview)
 ### 🔳 Create an Azure witness
 *Resources:* <br />
 [Deploy Cloud Witness for a failover cluster | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-cloud-witness)
@@ -133,11 +144,23 @@
 ## Manage failover clustering
 
 ### 🔳 Implement cluster-aware updating
+*Resources:* <br />
+[Cluster-Aware Updating overview | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-aware-updating)
 ### 🔳 Recover a failed cluster node
+*Resources:* <br />
+[High Availability troubleshooting documentation for Windows Server | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/high-availability/high-availability-overview)
 ### 🔳 Upgrade a node to Windows Server 2022
+*Resources:* <br />
+[Cluster operating system rolling upgrade | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade)
 ### 🔳 Failover workloads between nodes
+*Resources:* <br />
+[Failover Clustering | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2008-r2-and-2008/dd353290(v=ws.10))
 ### 🔳 Install Windows updates on a cluster node
+*Resources:* <br />
+[Cluster-Aware Updating advanced options and updating run profiles | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-aware-updating-options)
 ### 🔳 Manage failover clusters using Windows Admin Center
+*Resources:* <br />
+[Manage Failver Clusters with Windows Admin Center | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/manage/windows-admin-center/use/manage-failover-clusters)
 
 ## Implement and manage Storage Spaces Direct
 
