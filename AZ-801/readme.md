@@ -121,8 +121,14 @@
 ### 🔳 Configure cluster sets
 ### 🔳 Configure Scale-Out File servers
 ### 🔳 Create an Azure witness
+*Resources:* <br />
+[Deploy Cloud Witness for a failover cluster | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/deploy-cloud-witness)
 ### 🔳 Configure a floating IP address for the cluster
+*Resources:* <br />
+[Clustering Information on IP Address Failover | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/high-availability/cluster-information-ip-address-failover)
 ### 🔳 Implement load balancing for the failover cluster
+*Resources:* <br />
+[Virtual machine load balancing | Microsoft Docs](https://learn.microsoft.com/en-us/azure-stack/hci/manage/vm-load-balancing)
 
 ## Manage failover clustering
 
@@ -166,9 +172,13 @@
 ## Protect virtual machines by using Hyper-V replicas
 
 ### 🔳 Configure Hyper-V hosts for replication
+*Resources:* <br />
+[Set up Hyper-V Replica | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/manage/set-up-hyper-v-replica)
 ### 🔳 Manage Hyper-V replica servers
 ### 🔳 Configure VM replication
 ### 🔳 Perform a failover
+*Resources:* <br />
+[Demonstrate replication and planned failover | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831759(v=ws.11))
 
 # <a name="4"></a>Migrate servers and workloads
 
@@ -176,28 +186,56 @@
 
 ### 🔳 Transfer data and share
 ### 🔳 Cut over to a new server using Storage Migration Services (SMS)
+*Resources:* <br />
+[How cutover works in Storage Migration Service | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/cutover)
 ### 🔳 Use Storage Migration Services to migrate to Azure VMs
+*Resources:* <br />
+[Storage Migration Service overview | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-migration-service/overview)
 ### 🔳 Migrate to Azure file shares
+*Resources:* <br />
+[Migrate to SMB Azure file shares | Microsoft Docs](https://learn.microsoft.com/en-us/azure/storage/files/storage-files-migration-overview)
 
 ## Migrate on-premises servers to Azure
 
 ### 🔳 Deploy and configure Azure Migrate appliance
+*Resources:* <br />
+[Set up an appliance with a script | Microsoft Docs](https://learn.microsoft.com/en-us/azure/migrate/deploy-appliance-script)
 ### 🔳 Migrate VM workloads to Azure IaaS
+*Resources:* <br />
+[Migrate Hyper-V VMs to Azure | Microsoft Docs](https://learn.microsoft.com/en-us/azure/migrate/tutorial-migrate-hyper-v?tabs=UI)
 ### 🔳 Migrate physical workloads to IaaS
+*Resources:* <br />
+[Set up an appliance for physical servers | Microsoft Docs](https://learn.microsoft.com/en-us/azure/migrate/how-to-set-up-appliance-physical)
 ### 🔳 Migrate by using Azure Migrate
+*Resources:* <br />
+[Add migration tools | Microsoft Docs](https://learn.microsoft.com/en-us/azure/migrate/how-to-migrate)
 
 ## Migrate workloads from previous versions to Windows Server 2022
 
 ### 🔳 Migrate IIS
+*Resources:* <br />
+[Migrate a Web Site from IIS 6.0 to IIS 7 or above | Microsoft Docs](https://learn.microsoft.com/en-us/iis/publish/using-web-deploy/migrate-a-web-site-from-iis-60-to-iis-7-or-above)
 ### 🔳 Migrate Hyper-V hosts
+*Resources:* <br />
+[Hyper-V: Migration Options | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn486792(v=ws.11))
 ### 🔳 Migrate RDS host servers
+*Resources:* <br />
+[Migrate Remote Desktop Services to Windows Server 2012 R2 | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn479239(v=ws.11))
 ### 🔳 Migrate DHCP
+*Resources:* <br />
+[Migrate DHCP Server to Windows Server 2012 R2 | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn495425(v=ws.11))
 ### 🔳 Migrate print servers
+*Resources:* <br />
+[Migrate Print and Document Services to Windows Server 2012 | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj134150(v=ws.11))
 
 ## Migrate IIS workloads to Azure
 
 ### 🔳 Migrate IIS workloads to Azure Web Apps
+*Resources:* <br />
+[Migrate your .NET web app or service to Azure App Service | Microsoft Docs](https://learn.microsoft.com/en-us/dotnet/azure/migration/app-service)
 ### 🔳 Migrate IIS workloads to containers
+*Resources:* <br />
+[Containerize a .NET Core App | Microsft Docs](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/building-sample-app)
 
 ## Migrate an AD DS infrastructure to Windows Server 2022 AD DS
 
