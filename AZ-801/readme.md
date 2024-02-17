@@ -93,6 +93,8 @@
 ## Secure Windows Server storage
 
 ### 🔳 Manage Windows Bitlocker Drive Encryption (BitLocker)
+One of the requirements is that you need the EFI partition seperate from the main OS partition (and if it is UEFI it needs to be formated FAT32), to verify that you are good you can run `BdeHdCfg.exe -driveinfo`
+
 *Resources:* <br />
 [BitLocker Frequently Asked Questions (FAQ) | Microsoft Docs](https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh831507(v=ws.11))
 ### 🔳 Manage and recover encrypted volumes
