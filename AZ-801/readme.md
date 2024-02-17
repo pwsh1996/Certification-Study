@@ -81,6 +81,8 @@
 ## Secure Windows Server networking
 
 ### 🔳 Manage Windows Defender Firewall
+To get some basic details in PowerShell `Get-NetFirewallProfile`
+
 *Resources:* <br />
 [Configure rules with group policy | Microsoft Docs](https://docs.microsoft.com/en-us/windows/security/threat-protection/windows-firewall/best-practices-configuring)
 ### 🔳 Implement domain isolation
