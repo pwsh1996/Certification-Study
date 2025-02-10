@@ -328,6 +328,16 @@ One of the requirements is that you need the EFI partition seperate from the mai
 ## Monitor Windows Server by using Windows Server tools and Azure services
 
 ### 🔳 Monitor Windows Server using Performance Monitor
+Performance Monitor (C:\Windows\System32\perfmon.exe) can be used to view performance data in real time or via a log file.
+
+![image](https://github.com/user-attachments/assets/bff18e38-38f3-48fa-9498-12af5ea39324)
+
+From the main view you can select the green ➕ to add more performance counters, from there "Browse" lets you select another computer and there is also a "Show description" checkbox to explain what that counter does.
+
+![image](https://github.com/user-attachments/assets/7d5f2a26-a94f-474c-abcc-3b27e8a51c52)
+
+In the toolbar "Action" > "Properties" gives you a window that let's you change some of the way information is displayed, change the source from real time to logs, the apperance of the graphs and more.
+
 *Resources:* <br />
 [Windows Server performanace troubleshooting documentation | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/performance-overview)
 ### 🔳 Create and configure Data Collector Sets
