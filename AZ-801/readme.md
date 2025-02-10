@@ -183,7 +183,7 @@ One of the requirements is that you need the EFI partition seperate from the mai
 ### 🔳 Upgrade a Storage Spaces Direct node
 *Resources:* <br />
 [Upgrade a Storage Spaces Direct cluster to Windows Server 2019 | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/upgrade-storage-spaces-direct-to-windows-server-2019)
-### 🔳 Implement networing for Storage Spaces Direct
+### 🔳 Implement networking for Storage Spaces Direct
 *Resources:* <br />
 [Deploy Storage Spaces Direct on Windows Server | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-spaces/deploy-storage-spaces-direct#step-2-configure-the-network)
 ### 🔳 Configure Storage Spaces Direct
