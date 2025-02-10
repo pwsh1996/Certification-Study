@@ -338,6 +338,19 @@ From the main view you can select the green ➕ to add more performance counters
 
 In the toolbar "Action" > "Properties" gives you a window that let's you change some of the way information is displayed, change the source from real time to logs, the apperance of the graphs and more.
 
+You can also grab the counters via powershell
+```powershell
+Get-Counter -Counter "\Processor(_Total)\% Processor Time"
+```
+which outputs something like this
+```txt
+Timestamp                 CounterSamples
+---------                 --------------
+2/10/2025 3:38:14 PM      \\jacobplpt22\processor(_total)\% processor time :
+                          17.026364974548947
+```
+
+
 *Resources:* <br />
 [Windows Server performanace troubleshooting documentation | Microsoft Docs](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/performance-overview)
 ### 🔳 Create and configure Data Collector Sets
