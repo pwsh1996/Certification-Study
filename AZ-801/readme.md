@@ -120,7 +120,7 @@ One of the requirements is that you need the EFI partition seperate from the mai
 ### 🔳 Create a Windows failover cluster
 *Resources:* <br />
 [Create a failover cluster | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/failover-clustering/create-failover-cluster)
-### 🔳 Stretch cluster across datacenters or Azure regions
+### 🔳 Implement a stretch cluster across datacenters or Azure regions
 *Resources:* <br />
 [Stretch Cluster Replication Using Shared Storage | Microsoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/stretch-cluster-replication-using-shared-storage) <br />
 [Cluster to Cluster Storage Replication Cross-Region in Azure | MIcrosoft Docs](https://learn.microsoft.com/en-us/windows-server/storage/storage-replica/cluster-to-cluster-azure-cross-region)
